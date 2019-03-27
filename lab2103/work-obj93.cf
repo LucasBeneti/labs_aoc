@@ -1,0 +1,7 @@
+v 4
+file . "mux2x1_tb.vhd" "24fb9fc2f8ca229c0910bb9dc17b8c3bcd1c1d5c" "20190327025403.902":
+  entity mux2x1_tb at 1( 0) + 0 on 35;
+  architecture xmux2x1 of mux2x1_tb at 7( 77) + 0 on 36;
+file . "mux2x1.vhd" "9352d4c40d575a5abf143b2c2e0958648f8e8c39" "20190327025403.807":
+  entity mux2x1 at 1( 0) + 0 on 33;
+  architecture a_mux2x1 of mux2x1 at 12( 189) + 0 on 34;
