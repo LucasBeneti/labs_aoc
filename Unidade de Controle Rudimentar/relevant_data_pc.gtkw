@@ -1,0 +1,26 @@
+[*]
+[*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
+[*] Tue May  7 03:46:54 2019
+[*]
+[dumpfile] "/home/lucas/Documents/labs_aoc/Unidade de Controle Rudimentar/pc_tb.ghw"
+[dumpfile_mtime] "Tue May  7 03:46:51 2019"
+[dumpfile_size] 679
+[savefile] "/home/lucas/Documents/labs_aoc/Unidade de Controle Rudimentar/relevant_data_pc.gtkw"
+[timestart] 0
+[size] 1248 694
+[pos] -1 -1
+*-27.300417 333000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.pc_tb.
+[sst_width] 223
+[signals_width] 185
+[sst_expanded] 1
+[sst_vpaned_height] 193
+@28
+top.pc_tb.uut.rst
+top.pc_tb.uut.wr_en
+top.pc_tb.uut.clk
+#{top.pc_tb.data_out[6:0]} top.pc_tb.data_out[6] top.pc_tb.data_out[5] top.pc_tb.data_out[4] top.pc_tb.data_out[3] top.pc_tb.data_out[2] top.pc_tb.data_out[1] top.pc_tb.data_out[0]
+#{top.pc_tb.data_in[6:0]} top.pc_tb.data_in[6] top.pc_tb.data_in[5] top.pc_tb.data_in[4] top.pc_tb.data_in[3] top.pc_tb.data_in[2] top.pc_tb.data_in[1] top.pc_tb.data_in[0]
+[pattern_trace] 1
+[pattern_trace] 0

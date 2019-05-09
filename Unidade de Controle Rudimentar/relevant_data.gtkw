@@ -1,0 +1,25 @@
+[*]
+[*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
+[*] Tue May  7 01:43:12 2019
+[*]
+[dumpfile] "/home/lucas/Documents/labs_aoc/Unidade de Controle Rudimentar/rom_tb.ghw"
+[dumpfile_mtime] "Tue May  7 01:38:46 2019"
+[dumpfile_size] 709
+[savefile] "/home/lucas/Documents/labs_aoc/Unidade de Controle Rudimentar/relevant_data.gtkw"
+[timestart] 0
+[size] 1674 839
+[pos] 56 -345
+*-26.193588 49100000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.rom_tb.
+[treeopen] top.rom_tb.uut.
+[sst_width] 223
+[signals_width] 211
+[sst_expanded] 1
+[sst_vpaned_height] 244
+@28
+top.rom_tb.clk
+#{top.rom_tb.data[11:0]} top.rom_tb.data[11] top.rom_tb.data[10] top.rom_tb.data[9] top.rom_tb.data[8] top.rom_tb.data[7] top.rom_tb.data[6] top.rom_tb.data[5] top.rom_tb.data[4] top.rom_tb.data[3] top.rom_tb.data[2] top.rom_tb.data[1] top.rom_tb.data[0]
+#{top.rom_tb.addr[6:0]} top.rom_tb.addr[6] top.rom_tb.addr[5] top.rom_tb.addr[4] top.rom_tb.addr[3] top.rom_tb.addr[2] top.rom_tb.addr[1] top.rom_tb.addr[0]
+[pattern_trace] 1
+[pattern_trace] 0

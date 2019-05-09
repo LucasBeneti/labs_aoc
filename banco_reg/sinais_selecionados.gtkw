@@ -1,0 +1,27 @@
+[*]
+[*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
+[*] Thu Apr 18 21:33:26 2019
+[*]
+[dumpfile] "/home/lucas/Documents/labs_aoc/banco_reg/reg16bits_tb.ghw"
+[dumpfile_mtime] "Thu Apr  4 22:18:39 2019"
+[dumpfile_size] 37081482
+[savefile] "/home/lucas/Documents/labs_aoc/banco_reg/sinais_selecionados.gtkw"
+[timestart] 0
+[size] 1366 747
+[pos] -1 -123
+*-46.259186 29000000000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.reg16bits_tb.
+[sst_width] 205
+[signals_width] 247
+[sst_expanded] 1
+[sst_vpaned_height] 214
+@28
+top.reg16bits_tb.wr_en
+top.reg16bits_tb.rst
+top.reg16bits_tb.clk
+@29
+#{top.reg16bits_tb.data_out[15:0]} top.reg16bits_tb.data_out[15] top.reg16bits_tb.data_out[14] top.reg16bits_tb.data_out[13] top.reg16bits_tb.data_out[12] top.reg16bits_tb.data_out[11] top.reg16bits_tb.data_out[10] top.reg16bits_tb.data_out[9] top.reg16bits_tb.data_out[8] top.reg16bits_tb.data_out[7] top.reg16bits_tb.data_out[6] top.reg16bits_tb.data_out[5] top.reg16bits_tb.data_out[4] top.reg16bits_tb.data_out[3] top.reg16bits_tb.data_out[2] top.reg16bits_tb.data_out[1] top.reg16bits_tb.data_out[0]
+#{top.reg16bits_tb.data_in[15:0]} top.reg16bits_tb.data_in[15] top.reg16bits_tb.data_in[14] top.reg16bits_tb.data_in[13] top.reg16bits_tb.data_in[12] top.reg16bits_tb.data_in[11] top.reg16bits_tb.data_in[10] top.reg16bits_tb.data_in[9] top.reg16bits_tb.data_in[8] top.reg16bits_tb.data_in[7] top.reg16bits_tb.data_in[6] top.reg16bits_tb.data_in[5] top.reg16bits_tb.data_in[4] top.reg16bits_tb.data_in[3] top.reg16bits_tb.data_in[2] top.reg16bits_tb.data_in[1] top.reg16bits_tb.data_in[0]
+[pattern_trace] 1
+[pattern_trace] 0

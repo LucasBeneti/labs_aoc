@@ -1,0 +1,19 @@
+v 4
+file . "ula.vhd" "1b15bd29d019e1c0988b0ea739dec182cd82b124" "20190501025145.299":
+  entity ula at 1( 0) + 0 on 133;
+  architecture a_ula of ula at 14( 273) + 0 on 134;
+file . "banco_e_ula_tb.vhd" "bfeb9ce131dae187330c477613c7ea2d44b30068" "20190501025145.644":
+  entity banco_e_ula_tb at 1( 0) + 0 on 137;
+  architecture a_banco_e_ula_tb of banco_e_ula_tb at 8( 108) + 0 on 138;
+file . "banco_regs.vhd" "5a50e2c168964f3cd5d18c89ef961301ead90287" "20190501025145.069":
+  entity banco_regs at 6( 275) + 0 on 131;
+  architecture a_banco of banco_regs at 20( 751) + 0 on 132;
+file . "reg16bits.vhd" "ee5155de6c45b4c5d5f62d1af324c0b3b5905806" "20190501025144.936":
+  entity reg16bits at 3( 30) + 0 on 129;
+  architecture a_reg16bits of reg16bits at 16( 323) + 0 on 130;
+file . "banco_e_ula.vhd" "5fdd995446ff48c68821218dc5c27cb1e83e25c6" "20190501025145.434":
+  entity banco_e_ula at 1( 0) + 0 on 135;
+  architecture a_banco_e_ula of banco_e_ula at 18( 719) + 0 on 136;
+file . "ula_tb.vhd" "57e110dbca3d14bbbfbe0c7f3dafcf121a5df377" "20190501023731.761":
+  entity ula_tb at 1( 0) + 0 on 91;
+  architecture a_ula_tb of ula_tb at 8( 100) + 0 on 92;
