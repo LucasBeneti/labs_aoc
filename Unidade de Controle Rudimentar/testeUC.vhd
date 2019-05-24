@@ -6,13 +6,9 @@ entity unidade_controle is
   port(clk : in std_logic; --
        wr_en: out std_logic; --
        rst: in std_logic; --
-       ula_psw: in unsigned (15 downto 0);
        data_out: out unsigned(15 downto 0);--
        wr_r: out unsigned(2  downto 0); --
-       r0_out: out unsigned(2 downto 0); --
-       r1_out: out unsigned(2 downto 0); --
        const_out: out unsigned(15 downto 0);
-       ula_op : out unsigned(1 downto 0);
        estado : out unsigned(1 downto 0); --
        const_on : out std_logic
   );
@@ -28,21 +24,23 @@ architecture a_unidade_controle of unidade_controle is
         );
 	end component;
     component rom
-        port( clk : in std_logic;
+        port( 
+            clk : in std_logic;
             endereco : in unsigned(6 downto 0);
             dado : out unsigned(15 downto 0)
         );
     end component;
 
     component fft
-	port(clk : in std_logic;
+        port(
+            clk : in std_logic;
             rst : in std_logic;
             estado : out unsigned(1 downto 0)
-         );
+        );
     end component;	
 
-    signal opcode: unsigned(5 downto 0);
-    signal data, d_out_rom, data_saida : unsigned(15 downto 0); 
+    signal opcode: unsigned(2 downto 0);
+    signal data, d_out_rom, data_saida : unsigned(11 downto 0); 
     signal endereco, prox_endereco: unsigned(15 downto 0);
     signal jump_end: unsigned(4 downto 0);
     signal jump_en: std_logic;
