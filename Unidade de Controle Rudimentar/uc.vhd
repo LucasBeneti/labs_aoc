@@ -39,19 +39,26 @@ architecture a_uc of uc is
     
 
     -- signal clk1: std_logic;
-    -- signal clockrom1: std_logic;
-    -- signal clockpc1: std_logic;
+    signal wr_en_pc: std_logic; -- para acompanhar o clock do PC
+
+    signal clock_pc: std_logic;
+    signal clock_rom: std_logic;
     signal estado_s: std_logic;
-    signal address,prox_addr: unsigned(6 downto 0); --addr que sai da UC e entra no demux do PC
+    signal address, prox_addr: unsigned(6 downto 0); --addr que sai da UC e entra no demux do PC
     signal opcode: unsigned(2 downto 0);
     signal instr_rom: unsigned(11 downto 0); --saida da rom          
     
     begin
         amaq: maq_estados port map(clk => clk, rst => rst, wr_en => wr_en, estado => estado_s); -- maquin a de estados
-        arom: rom port map(clk => clk , addr => instr, data => instr_rom);
-        apc: pc port map(clk => clk, rst => rst, wr_en => wr_en, data_in => prox_addr, data_out => address);
+        arom: rom port map(clk => clock_rom , addr => instr, data => instr_rom);
+        apc: pc port map(clk => clock_pc, rst => rst, wr_en => wr_en, data_in => prox_addr, data_out => address);
 
-    opcode <= instr_rom(11 downto 9);
-    addr_uc <= instr_rom(6 downto 0);
+    opcode <= instr_rom(11 downto 9); -- opcode pra ver se faz o jump ou nao
+    addr_uc <= instr_rom(6 downto 0); -- addr que sera enviado pro demux
 
     estado_uc <= estado_s;
+    
+    clock_pc <= estado_s;
+    wr_en_pc <= estado_s;
+
+    clock_rom <= not estado_s;
