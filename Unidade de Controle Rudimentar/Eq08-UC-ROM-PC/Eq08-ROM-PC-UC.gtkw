@@ -1,0 +1,29 @@
+[*]
+[*] GTKWave Analyzer v3.3.99 (w)1999-2019 BSI
+[*] Mon May 06 00:23:22 2019
+[*]
+[dumpfile] "C:\Users\marco\OneDrive\Área de Trabalho\uc_rom_pc\Eq08-ROM-PC-UC.ghw"
+[dumpfile_mtime] "Mon May 06 00:09:53 2019"
+[dumpfile_size] 2584
+[savefile] "C:\Users\marco\OneDrive\Área de Trabalho\uc_rom_pc\Eq08-ROM-PC-UC.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-30.253935 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.rom_pc_uc_tb.
+[treeopen] top.rom_pc_uc_tb.uut.
+[treeopen] top.rom_pc_uc_tb.uut.mem.
+[treeopen] top.rom_pc_uc_tb.uut.pc.
+[sst_width] 197
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@22
+#{top.rom_pc_uc_tb.rom_out[11:0]} top.rom_pc_uc_tb.rom_out[11] top.rom_pc_uc_tb.rom_out[10] top.rom_pc_uc_tb.rom_out[9] top.rom_pc_uc_tb.rom_out[8] top.rom_pc_uc_tb.rom_out[7] top.rom_pc_uc_tb.rom_out[6] top.rom_pc_uc_tb.rom_out[5] top.rom_pc_uc_tb.rom_out[4] top.rom_pc_uc_tb.rom_out[3] top.rom_pc_uc_tb.rom_out[2] top.rom_pc_uc_tb.rom_out[1] top.rom_pc_uc_tb.rom_out[0]
+#{top.rom_pc_uc_tb.uut.mem.dado[11:0]} top.rom_pc_uc_tb.uut.mem.dado[11] top.rom_pc_uc_tb.uut.mem.dado[10] top.rom_pc_uc_tb.uut.mem.dado[9] top.rom_pc_uc_tb.uut.mem.dado[8] top.rom_pc_uc_tb.uut.mem.dado[7] top.rom_pc_uc_tb.uut.mem.dado[6] top.rom_pc_uc_tb.uut.mem.dado[5] top.rom_pc_uc_tb.uut.mem.dado[4] top.rom_pc_uc_tb.uut.mem.dado[3] top.rom_pc_uc_tb.uut.mem.dado[2] top.rom_pc_uc_tb.uut.mem.dado[1] top.rom_pc_uc_tb.uut.mem.dado[0]
+@28
+top.rom_pc_uc_tb.uut.pc.reg.clk
+top.rom_pc_uc_tb.uut.pc.reg.rst
+[pattern_trace] 1
+[pattern_trace] 0
