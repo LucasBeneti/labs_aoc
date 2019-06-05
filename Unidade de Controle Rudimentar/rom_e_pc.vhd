@@ -4,9 +4,8 @@ use ieee.numeric_std.all;
 
 entity rom_e_pc is
     port(
-        clk, wr_en: in std_logic;
-        data_in: in unsigned(6 downto 0); -- entrada do PC
-        data: out unsigned(11 downto 0)
+        clk, rst: in std_logic;
+        data: out unsigned(11 downto 0) -- sai da ROM
     );
 end entity;
 
@@ -24,6 +23,17 @@ architecture a_rom_e_pc of rom_e_pc is
             clk, wr_en, rst: in std_logic;
             data_in: in unsigned(6 downto 0);
             data_out: out unsigned(6 downto 0)
+        );
+    end component;
+
+    component uc is
+        port(
+            clk, rst: in std_logic;
+            pc_wr_en: out std_logic;
+            instr: in unsigned(11 downto 0);
+            -- estado_uc: out unsigned(1 downto 0);
+            -- addr_uc: out unsigned(6 downto 0);
+            jump_en: out std_logic
         );
     end component;
 
