@@ -36,7 +36,7 @@ begin
 	process
 	begin
 		rst <= '1';
-		wait for 100 ns;
+		wait for 125 ns;
 		rst <= '0';
 		wait;
 	end process;

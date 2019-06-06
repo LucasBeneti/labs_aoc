@@ -7,20 +7,21 @@ end entity;
 
 architecture a_rom_e_pc_tb of rom_e_pc_tb is
     component rom_e_pc
-        port(
-            clk, wr_en: in std_logic;
-            data_in: in unsigned(6 downto 0); -- entrada do PC
-            data: out unsigned(11 downto 0)
-        );
+    port(
+        clk, rst: in std_logic;
+        data_out: out unsigned(11 downto 0) -- saida ROM
+    );
     end component;
-    signal clk, wr_en: std_logic;
-    signal data_in: unsigned(6 downto 0);
-    signal data: unsigned(11 downto 0);
+    -- signal clk, wr_en, rst: std_logic;
+    -- signal data_in: unsigned(6 downto 0);
+    -- signal data: unsigned(11 downto 0);
+    signal clk,rst: std_logic;
+    signal data_out: unsigned(11 downto 0);
 
     begin
         uut: rom_e_pc port map(
-            clk=>clk, wr_en=>wr_en,
-            data_in=>data_in, data=>data
+            clk=>clk,rst=>rst,
+            data_out=>data_out
         );
 
         process
@@ -31,11 +32,18 @@ architecture a_rom_e_pc_tb of rom_e_pc_tb is
                 wait for 50 ns;
         end process;
 
+        -- process
+        --     begin
+        --         wr_en<= '1';
+        --         data_in<= "0000000";
+        --         wait for 50 ns;
+        --         wait;
+        -- end process;
         process
-            begin
-                wr_en<= '1';
-                data_in<= "0000000";
-                wait for 50 ns;
-                wait;
-        end process;
+	        begin
+                rst <= '1';
+                wait for 100 ns;
+                rst <= '0';
+            wait;
+	end process;
 end architecture;
