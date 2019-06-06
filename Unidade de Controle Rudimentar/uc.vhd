@@ -8,7 +8,7 @@ entity uc is
         pc_wr_en: out std_logic;
         instr: in unsigned(11 downto 0);
         -- estado_uc: out unsigned(1 downto 0);
-        -- addr_uc: out unsigned(6 downto 0);
+        addr_uc: out unsigned(6 downto 0); -- address out
         jump_en: out std_logic
     );
 end entity;
@@ -32,6 +32,7 @@ begin
 
     pc_wr_en <= '1' when estate = '1' else
                 '0';
+    addr_uc <= instr(6 downto 0);
 end architecture;
 
 

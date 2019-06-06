@@ -20,22 +20,22 @@ architecture a_rom_pc_uc of rom_pc_uc is
 			instr 		: in unsigned(11 downto 0);
 			--saida : out unsigned(3 downto 0);
 			rst 		: in std_logic
-			);
+		);
 	end component;
 	component rom is
-		port( clk 			: in std_logic;
-			  endereco		: in unsigned(6 downto 0);
-			  dado 			: out unsigned(11 downto 0)
-			);  
+		port(	clk 		: in std_logic;
+			endereco	: in unsigned(6 downto 0);
+			dado 		: out unsigned(11 downto 0)
+		);  
 	end component;
 	component program_counter is
 		port( 	clk 		: in std_logic;
-				rst 		: in std_logic;
-				wr_en 		: in std_logic;	 
-				j_en		: in std_logic;
-				address_in	: in unsigned(7 downto 0);
-				data_out 	: out unsigned(15 downto 0)
-			);
+			rst 		: in std_logic;
+			wr_en 		: in std_logic;	 
+			j_en		: in std_logic;	
+			address_in	: in unsigned(7 downto 0);
+			data_out 	: out unsigned(15 downto 0)	
+		);
 	end component;
 	
 	signal j_en, pc_wr_en: std_logic;
