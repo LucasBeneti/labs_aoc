@@ -22,6 +22,6 @@ ghdl -e uc &&
 ghdl -a rom_e_pc.vhd &&
 ghdl -e rom_e_pc &&
 ghdl -a rom_e_pc_tb.vhd &&
-ghdl -e rom_e_pc_tb
-ghdl -r rom_e_pc_tb --stop-time=2000ns --wave=rom_e_pc_tb.ghw &&
-gtkwave rom_e_pc_tb.ghw
+ghdl -e rom_e_pc_tb &&
+ghdl -r rom_e_pc_tb --stop-time=2000ns --wave=rom_e_pc_tb.ghw
+# gtkwave rom_e_pc_tb.ghw

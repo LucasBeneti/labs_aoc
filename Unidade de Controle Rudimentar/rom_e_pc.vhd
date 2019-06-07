@@ -39,13 +39,13 @@ architecture a_rom_e_pc of rom_e_pc is
 
     signal adress_in, data_pc_out: unsigned(6 downto 0); -- dado que sai do PC
     signal instruction: unsigned(11 downto 0);
-    signal jump_enable, pc_write_en, clk_rom: std_logic;
+    signal jump_enable, pc_write_en: std_logic;
     
     signal addr_uc_mux: unsigned(6 downto 0);
     signal saida_mux: unsigned(6 downto 0);
 
     begin
-        a_rom: rom port map(clk=> clk_rom,
+        a_rom: rom port map(clk=> clk, --reer
                             addr=>data_pc_out,
                             data=>instruction
                             );
@@ -62,7 +62,7 @@ architecture a_rom_e_pc of rom_e_pc is
                             jump_en=>jump_enable
                             );
 
-        data_out <= instruction;
+    data_out <= instruction;
 
     saida_mux <= instruction(6 downto 0) when jump_enable='1' else
                  data_pc_out+"0000001";

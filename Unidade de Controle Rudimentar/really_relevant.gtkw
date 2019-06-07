@@ -1,0 +1,33 @@
+[*]
+[*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
+[*] Thu Jun  6 22:09:50 2019
+[*]
+[dumpfile] "/home/lucas/Documents/labs_aoc/Unidade de Controle Rudimentar/rom_e_pc_tb.ghw"
+[dumpfile_mtime] "Thu Jun  6 21:58:25 2019"
+[dumpfile_size] 1650
+[savefile] "/home/lucas/Documents/labs_aoc/Unidade de Controle Rudimentar/really_relevant.gtkw"
+[timestart] 0
+[size] 1366 747
+[pos] -367 -1
+*-28.631315 1338000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.rom_e_pc_tb.
+[treeopen] top.rom_e_pc_tb.uut.
+[treeopen] top.rom_e_pc_tb.uut.a_pc.
+[treeopen] top.rom_e_pc_tb.uut.a_rom.
+[sst_width] 205
+[signals_width] 161
+[sst_expanded] 1
+[sst_vpaned_height] 214
+@28
+top.rom_e_pc_tb.rst
+top.rom_e_pc_tb.clk
+top.rom_e_pc_tb.uut.jump_enable
+#{top.rom_e_pc_tb.data_out[11:0]} top.rom_e_pc_tb.data_out[11] top.rom_e_pc_tb.data_out[10] top.rom_e_pc_tb.data_out[9] top.rom_e_pc_tb.data_out[8] top.rom_e_pc_tb.data_out[7] top.rom_e_pc_tb.data_out[6] top.rom_e_pc_tb.data_out[5] top.rom_e_pc_tb.data_out[4] top.rom_e_pc_tb.data_out[3] top.rom_e_pc_tb.data_out[2] top.rom_e_pc_tb.data_out[1] top.rom_e_pc_tb.data_out[0]
+#{top.rom_e_pc_tb.uut.a_pc.data_in[6:0]} top.rom_e_pc_tb.uut.a_pc.data_in[6] top.rom_e_pc_tb.uut.a_pc.data_in[5] top.rom_e_pc_tb.uut.a_pc.data_in[4] top.rom_e_pc_tb.uut.a_pc.data_in[3] top.rom_e_pc_tb.uut.a_pc.data_in[2] top.rom_e_pc_tb.uut.a_pc.data_in[1] top.rom_e_pc_tb.uut.a_pc.data_in[0]
+@24
+#{top.rom_e_pc_tb.uut.a_rom.addr[6:0]} top.rom_e_pc_tb.uut.a_rom.addr[6] top.rom_e_pc_tb.uut.a_rom.addr[5] top.rom_e_pc_tb.uut.a_rom.addr[4] top.rom_e_pc_tb.uut.a_rom.addr[3] top.rom_e_pc_tb.uut.a_rom.addr[2] top.rom_e_pc_tb.uut.a_rom.addr[1] top.rom_e_pc_tb.uut.a_rom.addr[0]
+@29
+#{top.rom_e_pc_tb.uut.instruction[11:0]} top.rom_e_pc_tb.uut.instruction[11] top.rom_e_pc_tb.uut.instruction[10] top.rom_e_pc_tb.uut.instruction[9] top.rom_e_pc_tb.uut.instruction[8] top.rom_e_pc_tb.uut.instruction[7] top.rom_e_pc_tb.uut.instruction[6] top.rom_e_pc_tb.uut.instruction[5] top.rom_e_pc_tb.uut.instruction[4] top.rom_e_pc_tb.uut.instruction[3] top.rom_e_pc_tb.uut.instruction[2] top.rom_e_pc_tb.uut.instruction[1] top.rom_e_pc_tb.uut.instruction[0]
+[pattern_trace] 1
+[pattern_trace] 0
