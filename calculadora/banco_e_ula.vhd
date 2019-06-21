@@ -8,10 +8,12 @@ entity banco_e_ula is
         -- reg_out_a, reg_out_b: out unsigned(2 downto 0); -- 3 bits para escolher entre os 8 regs
         wd3: in unsigned(15 downto 0); -- dado a ser gravado
         clk, we3, rst: in std_logic; -- we3 p/ quando for escrever
-        op_ula: in unsigned(1 downto 0); -- operacao da ula
-        --flag_maior: out std_logic; -- flag de maior ou menor, soh booleano mesmo
-        output_s: out unsigned(15 downto 0) -- saida geral (da ULA)
+        op_ula: in unsigned(5 downto 0); -- operacao da ula
+        -- flag_maior: out std_logic; -- flag de maior ou menor, soh booleano mesmo
+        output_s: out unsigned(15 downto 0); -- saida geral (da ULA)
         --aida1, saida2: out unsigned(15 downto 0) -- aqui nao eh uma saida
+        imm_flag: in std_logic; -- flag, vem da UC
+        imm_value: in unsigned(4 downto 0) -- vem da UC
     );
 end entity;
 
@@ -30,18 +32,18 @@ architecture a_banco_e_ula of banco_e_ula is
         port(
             in_A, in_B: in unsigned(15 downto 0);
             op: in unsigned(1 downto 0);
-            
+            flag_maior: out std_logic; -- verfica se eh maior
             out_S: out unsigned(15 downto 0)
         );
     end component;
 
     signal rd1, rd2: unsigned(15 downto 0); -- saido do banco e entrada da ula
-    signal op_ula_s: unsigned(1 downto 0);
-    signal output_s_s: unsigned(15 downto 0);
 
     begin
         banco: banco_regs port map(clk=>clk, we3=>we3, wd3=>wd3, rst=>rst, rd1=>rd1, rd2=>rd2, a3=>a3, a1=>a1, a2=>a2);
-        a_ula: ula port map(in_A=>rd1, in_B=>rd2, op=>op_ula_s, out_S=>output_s_s);
+        a_ula: ula port map(in_A=>rd1, in_B=>rd2, op=>op_ula, out_S=>output_s , flag_maior=>flag_maior);
+
+
 
 end architecture;
 

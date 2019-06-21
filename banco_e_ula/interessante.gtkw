@@ -1,0 +1,37 @@
+[*]
+[*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
+[*] Fri Jun 21 00:40:50 2019
+[*]
+[dumpfile] "/home/lucas/Documents/labs_aoc/banco_e_ula/banco_e_ula_tb.ghw"
+[dumpfile_mtime] "Wed May  1 02:51:45 2019"
+[dumpfile_size] 3118
+[savefile] "/home/lucas/Documents/labs_aoc/banco_e_ula/interessante.gtkw"
+[timestart] 0
+[size] 1608 929
+[pos] -467 -1066
+*-26.430073 148200000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.banco_e_ula_tb.
+[treeopen] top.banco_e_ula_tb.uut.
+[sst_width] 223
+[signals_width] 241
+[sst_expanded] 1
+[sst_vpaned_height] 276
+@28
+top.banco_e_ula_tb.rst
+top.banco_e_ula_tb.we3
+top.banco_e_ula_tb.clk
+@22
+#{top.banco_e_ula_tb.output_s[15:0]} top.banco_e_ula_tb.output_s[15] top.banco_e_ula_tb.output_s[14] top.banco_e_ula_tb.output_s[13] top.banco_e_ula_tb.output_s[12] top.banco_e_ula_tb.output_s[11] top.banco_e_ula_tb.output_s[10] top.banco_e_ula_tb.output_s[9] top.banco_e_ula_tb.output_s[8] top.banco_e_ula_tb.output_s[7] top.banco_e_ula_tb.output_s[6] top.banco_e_ula_tb.output_s[5] top.banco_e_ula_tb.output_s[4] top.banco_e_ula_tb.output_s[3] top.banco_e_ula_tb.output_s[2] top.banco_e_ula_tb.output_s[1] top.banco_e_ula_tb.output_s[0]
+#{top.banco_e_ula_tb.wd3[15:0]} top.banco_e_ula_tb.wd3[15] top.banco_e_ula_tb.wd3[14] top.banco_e_ula_tb.wd3[13] top.banco_e_ula_tb.wd3[12] top.banco_e_ula_tb.wd3[11] top.banco_e_ula_tb.wd3[10] top.banco_e_ula_tb.wd3[9] top.banco_e_ula_tb.wd3[8] top.banco_e_ula_tb.wd3[7] top.banco_e_ula_tb.wd3[6] top.banco_e_ula_tb.wd3[5] top.banco_e_ula_tb.wd3[4] top.banco_e_ula_tb.wd3[3] top.banco_e_ula_tb.wd3[2] top.banco_e_ula_tb.wd3[1] top.banco_e_ula_tb.wd3[0]
+@28
+#{top.banco_e_ula_tb.op_ula[1:0]} top.banco_e_ula_tb.op_ula[1] top.banco_e_ula_tb.op_ula[0]
+#{top.banco_e_ula_tb.a3[2:0]} top.banco_e_ula_tb.a3[2] top.banco_e_ula_tb.a3[1] top.banco_e_ula_tb.a3[0]
+#{top.banco_e_ula_tb.a2[2:0]} top.banco_e_ula_tb.a2[2] top.banco_e_ula_tb.a2[1] top.banco_e_ula_tb.a2[0]
+#{top.banco_e_ula_tb.a1[2:0]} top.banco_e_ula_tb.a1[2] top.banco_e_ula_tb.a1[1] top.banco_e_ula_tb.a1[0]
+@22
+#{top.banco_e_ula_tb.uut.rd2[15:0]} top.banco_e_ula_tb.uut.rd2[15] top.banco_e_ula_tb.uut.rd2[14] top.banco_e_ula_tb.uut.rd2[13] top.banco_e_ula_tb.uut.rd2[12] top.banco_e_ula_tb.uut.rd2[11] top.banco_e_ula_tb.uut.rd2[10] top.banco_e_ula_tb.uut.rd2[9] top.banco_e_ula_tb.uut.rd2[8] top.banco_e_ula_tb.uut.rd2[7] top.banco_e_ula_tb.uut.rd2[6] top.banco_e_ula_tb.uut.rd2[5] top.banco_e_ula_tb.uut.rd2[4] top.banco_e_ula_tb.uut.rd2[3] top.banco_e_ula_tb.uut.rd2[2] top.banco_e_ula_tb.uut.rd2[1] top.banco_e_ula_tb.uut.rd2[0]
+@23
+#{top.banco_e_ula_tb.uut.rd1[15:0]} top.banco_e_ula_tb.uut.rd1[15] top.banco_e_ula_tb.uut.rd1[14] top.banco_e_ula_tb.uut.rd1[13] top.banco_e_ula_tb.uut.rd1[12] top.banco_e_ula_tb.uut.rd1[11] top.banco_e_ula_tb.uut.rd1[10] top.banco_e_ula_tb.uut.rd1[9] top.banco_e_ula_tb.uut.rd1[8] top.banco_e_ula_tb.uut.rd1[7] top.banco_e_ula_tb.uut.rd1[6] top.banco_e_ula_tb.uut.rd1[5] top.banco_e_ula_tb.uut.rd1[4] top.banco_e_ula_tb.uut.rd1[3] top.banco_e_ula_tb.uut.rd1[2] top.banco_e_ula_tb.uut.rd1[1] top.banco_e_ula_tb.uut.rd1[0]
+[pattern_trace] 1
+[pattern_trace] 0

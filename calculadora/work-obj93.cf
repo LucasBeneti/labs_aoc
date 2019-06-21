@@ -1,7 +1,13 @@
 v 4
+file . "ula_tb.vhd" "40d6b9e33d3e91665301b6214761a0cf37eee574" "20190621000830.099":
+  entity ula_tb at 1( 0) + 0 on 55;
+  architecture a_ula_tb of ula_tb at 8( 100) + 0 on 56;
 file . "maq_estados_tb.vhd" "b02e6997ef778726f18c9bc84a49a0d9527cfd04" "20190612020902.805":
   entity maq_estados_tb at 1( 0) + 0 on 31;
   architecture a_maq_estados_tb of maq_estados_tb at 7( 107) + 0 on 32;
 file . "maq_estados.vhd" "d2d79e3f986364d7e1858be56a665ab4e8ca3225" "20190612020843.896":
   entity maq_estados at 1( 0) + 0 on 29;
   architecture a_maq_estados of maq_estados at 11( 192) + 0 on 30;
+file . "ula.vhd" "6e25ed521a8f4130e3c5ce76623a2a70cc0aa8a1" "20190621000829.940":
+  entity ula at 1( 0) + 0 on 53;
+  architecture a_ula of ula at 20( 453) + 0 on 54;
