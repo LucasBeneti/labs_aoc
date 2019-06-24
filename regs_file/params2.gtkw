@@ -1,0 +1,32 @@
+[*]
+[*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
+[*] Sun Jun 23 19:16:28 2019
+[*]
+[dumpfile] "/home/lucas/Documents/labs_aoc/regs_file/banco_regs_tb.ghw"
+[dumpfile_mtime] "Sun Jun 23 18:30:41 2019"
+[dumpfile_size] 2897
+[savefile] "/home/lucas/Documents/labs_aoc/regs_file/params2.gtkw"
+[timestart] 0
+[size] 1692 930
+[pos] -737 -361
+*-26.165083 341200000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.banco_regs_tb.
+[treeopen] top.banco_regs_tb.uut.
+[sst_width] 223
+[signals_width] 154
+[sst_expanded] 1
+[sst_vpaned_height] 276
+@24
+#{top.banco_regs_tb.a1[2:0]} top.banco_regs_tb.a1[2] top.banco_regs_tb.a1[1] top.banco_regs_tb.a1[0]
+#{top.banco_regs_tb.a2[2:0]} top.banco_regs_tb.a2[2] top.banco_regs_tb.a2[1] top.banco_regs_tb.a2[0]
+#{top.banco_regs_tb.a3[2:0]} top.banco_regs_tb.a3[2] top.banco_regs_tb.a3[1] top.banco_regs_tb.a3[0]
+@28
+#{top.banco_regs_tb.wd3[15:0]} top.banco_regs_tb.wd3[15] top.banco_regs_tb.wd3[14] top.banco_regs_tb.wd3[13] top.banco_regs_tb.wd3[12] top.banco_regs_tb.wd3[11] top.banco_regs_tb.wd3[10] top.banco_regs_tb.wd3[9] top.banco_regs_tb.wd3[8] top.banco_regs_tb.wd3[7] top.banco_regs_tb.wd3[6] top.banco_regs_tb.wd3[5] top.banco_regs_tb.wd3[4] top.banco_regs_tb.wd3[3] top.banco_regs_tb.wd3[2] top.banco_regs_tb.wd3[1] top.banco_regs_tb.wd3[0]
+#{top.banco_regs_tb.rd1[15:0]} top.banco_regs_tb.rd1[15] top.banco_regs_tb.rd1[14] top.banco_regs_tb.rd1[13] top.banco_regs_tb.rd1[12] top.banco_regs_tb.rd1[11] top.banco_regs_tb.rd1[10] top.banco_regs_tb.rd1[9] top.banco_regs_tb.rd1[8] top.banco_regs_tb.rd1[7] top.banco_regs_tb.rd1[6] top.banco_regs_tb.rd1[5] top.banco_regs_tb.rd1[4] top.banco_regs_tb.rd1[3] top.banco_regs_tb.rd1[2] top.banco_regs_tb.rd1[1] top.banco_regs_tb.rd1[0]
+#{top.banco_regs_tb.rd2[15:0]} top.banco_regs_tb.rd2[15] top.banco_regs_tb.rd2[14] top.banco_regs_tb.rd2[13] top.banco_regs_tb.rd2[12] top.banco_regs_tb.rd2[11] top.banco_regs_tb.rd2[10] top.banco_regs_tb.rd2[9] top.banco_regs_tb.rd2[8] top.banco_regs_tb.rd2[7] top.banco_regs_tb.rd2[6] top.banco_regs_tb.rd2[5] top.banco_regs_tb.rd2[4] top.banco_regs_tb.rd2[3] top.banco_regs_tb.rd2[2] top.banco_regs_tb.rd2[1] top.banco_regs_tb.rd2[0]
+top.banco_regs_tb.clk
+top.banco_regs_tb.we3
+top.banco_regs_tb.rst
+[pattern_trace] 1
+[pattern_trace] 0

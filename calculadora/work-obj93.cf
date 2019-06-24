@@ -1,13 +1,28 @@
 v 4
-file . "ula_tb.vhd" "40d6b9e33d3e91665301b6214761a0cf37eee574" "20190621000830.099":
-  entity ula_tb at 1( 0) + 0 on 55;
-  architecture a_ula_tb of ula_tb at 8( 100) + 0 on 56;
-file . "maq_estados_tb.vhd" "b02e6997ef778726f18c9bc84a49a0d9527cfd04" "20190612020902.805":
-  entity maq_estados_tb at 1( 0) + 0 on 31;
-  architecture a_maq_estados_tb of maq_estados_tb at 7( 107) + 0 on 32;
+file . "banco_e_ula_tb.vhd" "fa7f848d0c7b1718b7c781aa09bd4d29b16c8614" "20190624001356.835":
+  entity banco_e_ula_tb at 1( 0) + 0 on 209;
+  architecture a_banco_e_ula_tb of banco_e_ula_tb at 8( 108) + 0 on 210;
+file . "banco_regs_tb.vhd" "dce5f7d854e5aeafc9d552232ee8c15e1feab874" "20190623192807.812":
+  entity banco_regs_tb at 1( 0) + 0 on 117;
+  architecture a_banco_regs_tb of banco_regs_tb at 8( 100) + 0 on 118;
+file . "banco_e_ula.vhd" "e83099cc4e43718f5f9dbf2117ff9dc3eef63ed7" "20190624001356.654":
+  entity banco_e_ula at 1( 0) + 0 on 207;
+  architecture a_banco_e_ula of banco_e_ula at 20( 830) + 0 on 208;
+file . "ula.vhd" "496bf124f552f078b49154ac0d1188c909879c31" "20190624001356.524":
+  entity ula at 1( 0) + 0 on 205;
+  architecture a_ula of ula at 20( 487) + 0 on 206;
 file . "maq_estados.vhd" "d2d79e3f986364d7e1858be56a665ab4e8ca3225" "20190612020843.896":
   entity maq_estados at 1( 0) + 0 on 29;
   architecture a_maq_estados of maq_estados at 11( 192) + 0 on 30;
-file . "ula.vhd" "6e25ed521a8f4130e3c5ce76623a2a70cc0aa8a1" "20190621000829.940":
-  entity ula at 1( 0) + 0 on 53;
-  architecture a_ula of ula at 20( 453) + 0 on 54;
+file . "maq_estados_tb.vhd" "b02e6997ef778726f18c9bc84a49a0d9527cfd04" "20190612020902.805":
+  entity maq_estados_tb at 1( 0) + 0 on 31;
+  architecture a_maq_estados_tb of maq_estados_tb at 7( 107) + 0 on 32;
+file . "ula_tb.vhd" "40d6b9e33d3e91665301b6214761a0cf37eee574" "20190624000655.401":
+  entity ula_tb at 1( 0) + 0 on 189;
+  architecture a_ula_tb of ula_tb at 8( 100) + 0 on 190;
+file . "banco_regs.vhd" "609078c5e9014f239b5da228f15d67ce026ae4e0" "20190624001356.245":
+  entity banco_regs at 6( 275) + 0 on 203;
+  architecture a_banco of banco_regs at 20( 819) + 0 on 204;
+file . "reg16bits.vhd" "0e1ec35594380873a2d36561d56a3b13ba1a81ce" "20190624001356.082":
+  entity reg16bits at 1( 0) + 0 on 201;
+  architecture a_reg16bits of reg16bits at 14( 293) + 0 on 202;

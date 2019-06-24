@@ -6,12 +6,12 @@ entity uc is
     port(
         clk, rst: in std_logic;
         pc_wr_en: out std_logic;
-        instr: in unsigned(15 downto 0);
-        addr_uc: out unsigned(6 downto 0); -- address out
+        instr: in unsigned(15 downto 0);-- vem da ROM
+        addr_uc: out unsigned(6 downto 0); -- address out (para o jump)
         jump_en: out std_logic;
         reg_destino: out unsigned(4 downto 0); -- reg destino da operacao
         reg_operando: out unsigned(4 downto 0); -- reg usado na operacao
-        imm: out std_logic; -- flag para ver se operacao sera com imediato (LDI)
+        imm_flag: out std_logic; -- flag para ver se operacao sera com imediato (LDI)
         immediate: out unsigned(4 downto 0);
         opcode: out unsigned(5 downto 0)
     );
@@ -38,7 +38,7 @@ begin
     pc_wr_en <= '1' when estate = '1' else
                 '0';
 
-    imm <=  '1' when opcode = "111000" else
+    imm_flag <=  '1' when opcode = "111000" else
             '0';
 
     addr_uc <= instr(6 downto 0);

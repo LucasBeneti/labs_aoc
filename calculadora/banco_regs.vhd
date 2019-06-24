@@ -9,7 +9,7 @@ use ieee.numeric_std.all;
 
 entity banco_regs is
     port(
-        a1, a2, a3: in unsigned(4 downto 0); -- 5 bits para escolher entre os 32 regs (nao coloquei 32 ainda)
+        a1, a2, a3: in unsigned(2 downto 0); -- 5 bits para escolher entre os 32 regs (nao coloquei 32 ainda)
         --reg_out_a, reg_out_b: out unsigned(2 downto 0); -- 3 bits para escolher entre os 8 regs
         wd3: in unsigned(15 downto 0); -- dado a ser gravado
         clk, we3, rst: in std_logic; -- we3 p/ quando for escrever

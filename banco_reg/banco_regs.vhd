@@ -5,9 +5,10 @@ use ieee.numeric_std.all;
 entity banco_regs is
     port(
         a1, a2, a3: in unsigned(2 downto 0); -- 3 bits para escolher entre os 8 regs
-        reg_out_a, reg_out_b: out unsigned(2 downto 0); -- 3 bits para escolher entre os 8 regs
+        --reg_out_a, reg_out_b: out unsigned(2 downto 0); -- 3 bits para escolher entre os 8 regs
         wd3: in unsigned(15 downto 0); -- dado a ser gravado
-        clk, we3, rst: in std_logic -- we3 p/ quando for escrever
+        clk, we3, rst: in std_logic; -- we3 p/ quando for escrever
+        rd1,rd2: out unsigned(15 downto 0)
     );
 end entity;
 
@@ -18,7 +19,7 @@ architecture a_banco of banco_regs is
                 clk: in std_logic;
                 rst: in std_logic;
                 we3: in std_logic;
-                data_in: in unsigned(15 downto 0);
+                wd3: in unsigned(15 downto 0);
                 data_out: out unsigned(15 downto 0)
             );
     end component;
