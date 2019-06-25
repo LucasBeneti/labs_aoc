@@ -1,4 +1,4 @@
---Autor: Lucas SIlva Beneti
+--Autor: Lucas Silva Beneti
 -- A maior dificuldade foi mapear as portas e decidir a lógica de mux e demux que deveria
 -- ser realizada para a selecao tanto de saida quanto de entrada. E também de alinhar o componente
 -- de registrador de 16 bits com as entradas do banco.
