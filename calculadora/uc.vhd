@@ -50,8 +50,8 @@ begin
                     "0000000" when opcode = "111000" else -- LDI
                     instr(9 downto 5);
 
-    immediate <= instr(9 downto 5) when opcode = "111000" else -- se for op para LDI
-                 "00000";
+    immediate <= "00000000000" & instr(9 downto 5) when opcode = "111000" else -- se for op para LDI
+                 "0000000000000000";
                     
     opcode <= opcode_s; -- verificar se isso pode
 end architecture;

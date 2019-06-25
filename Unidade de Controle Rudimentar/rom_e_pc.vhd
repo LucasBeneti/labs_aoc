@@ -31,7 +31,6 @@ architecture a_rom_e_pc of rom_e_pc is
             clk, rst: in std_logic;
             pc_wr_en: out std_logic;
             instr: in unsigned(11 downto 0);
-            -- estado_uc: out unsigned(1 downto 0);
             addr_uc: out unsigned(6 downto 0);
             jump_en: out std_logic
         );
