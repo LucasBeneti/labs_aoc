@@ -107,32 +107,32 @@ architecture a_calculadora of calculadora is
         );
 
         a_uc: uc port map(
-            clk=>clk, 
-            rst=>rst,
-            pc_wr_en=>pc_wr_enable,
-            instr=>instruction,
-            jump_en=>jump_enable,
-            reg_destino=>rd_para_banco,
-            reg_operando=>rr_para_banco,
-            imm_flag=>immediate_flag,
-            immediate=>immediate_value,
-            opcode=>opcode_ula
+            clk => clk, 
+            rst => rst,
+            pc_wr_en => pc_wr_enable,
+            instr => instruction,
+            jump_en => jump_enable,
+            reg_destino => rd_para_banco,
+            reg_operando => rr_para_banco,
+            imm_flag => immediate_flag,
+            immediate => immediate_value,
+            opcode => opcode_ula
         );
 
         a_banco: banco_regs port map(
-            clk=>clk, 
-            rst=>rst,
-            we3=>pc_wr_enable,
-            wd3=>res_ula,
-            rd1=>saida_1,
-            rd2=>saida_2
+            clk => clk, 
+            rst => rst,
+            we3 => pc_wr_enable,
+            wd3 => res_ula,
+            rd1 => saida_1,
+            rd2 => saida_2
         );
 
         a_ula: ula port map(
-            in_A=>entrada_1,
-            in_B=>entrada_2,
-            op=>opcode_ula,
-            out_S=>res_ula
+            in_A => entrada_1,
+            in_B => entrada_2,
+            op => opcode_ula,
+            out_S => res_ula
         );
 
 -- dar uma olhada melhor nas ligações porque acredito que algumas estão duplicadas
