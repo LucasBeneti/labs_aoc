@@ -9,7 +9,7 @@ use ieee.numeric_std.all;
 
 entity banco_regs is
     port(
-        a1, a2, a3: in unsigned(2 downto 0); -- 5 bits para escolher entre os 32 regs (nao coloquei 32 ainda)
+        a1, a2, a3: in unsigned(4 downto 0); -- 5 bits para escolher entre os 32 regs (nao coloquei 32 ainda)
         --reg_out_a, reg_out_b: out unsigned(2 downto 0); -- 3 bits para escolher entre os 8 regs
         wd3: in unsigned(15 downto 0); -- dado a ser gravado
         clk, we3, rst: in std_logic; -- we3 p/ quando for escrever
@@ -44,40 +44,40 @@ begin
 
 
     -- write enable
-    en1 <=  we3 when a3="001" else -- enable para escrita (escolhendo qual enx será setado)
+    en1 <=  we3 when a3="00001" else -- enable para escrita (escolhendo qual enx será setado)
             '0';
-    en2 <=  we3 when a3="010" else
+    en2 <=  we3 when a3="00010" else
             '0';
-    en3 <=  we3 when a3="011" else
+    en3 <=  we3 when a3="00011" else
             '0';
-    en4 <=  we3 when a3="100" else
+    en4 <=  we3 when a3="00100" else
             '0';
-    en5 <=  we3 when a3="101" else
+    en5 <=  we3 when a3="00101" else
             '0';
-    en6 <=  we3 when a3="110" else
+    en6 <=  we3 when a3="00110" else
             '0';
-    en7 <=  we3 when a3="111" else
+    en7 <=  we3 when a3="00111" else
             '0';
 
     -- mux saida p/ registrador A
-    rd1 <=  reg0 when a1 = "000" else
-            reg1 when a1 = "001" else
-            reg2 when a1 = "010" else
-            reg3 when a1 = "011" else
-            reg4 when a1 = "100" else
-            reg5 when a1 = "101" else
-            reg6 when a1 = "110" else
-            reg7 when a1 = "111" else
+    rd1 <=  reg0 when a1 = "00000" else
+            reg1 when a1 = "00001" else
+            reg2 when a1 = "00010" else
+            reg3 when a1 = "00011" else
+            reg4 when a1 = "00100" else
+            reg5 when a1 = "00101" else
+            reg6 when a1 = "00110" else
+            reg7 when a1 = "00111" else
             "0000000000000000";
 
     -- mux saida p/ registrador B
-    rd2 <=  reg0 when a2 = "000" else
-            reg1 when a2 = "001" else
-            reg2 when a2 = "010" else
-            reg3 when a2 = "011" else
-            reg4 when a2 = "100" else
-            reg5 when a2 = "101" else
-            reg6 when a2 = "110" else
-            reg7 when a2 = "111" else
+    rd2 <=  reg0 when a2 = "00000" else
+            reg1 when a2 = "00001" else
+            reg2 when a2 = "00010" else
+            reg3 when a2 = "00011" else
+            reg4 when a2 = "00100" else
+            reg5 when a2 = "00101" else
+            reg6 when a2 = "00110" else
+            reg7 when a2 = "00111" else
             "0000000000000000";
 end architecture;

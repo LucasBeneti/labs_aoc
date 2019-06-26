@@ -40,7 +40,7 @@ architecture a_calculadora of calculadora is
     end component;
 
     component banco_regs is 
-        port(   a1, a2, a3: in unsigned(2 downto 0); -- 5 bits para escolher entre os 32 regs (nao coloquei 32 ainda)
+        port(   a1, a2, a3: in unsigned(4 downto 0); -- 5 bits para escolher entre os 32 regs (nao coloquei 32 ainda)
                 --reg_out_a, reg_out_b: out unsigned(2 downto 0); -- 3 bits para escolher entre os 8 regs
                 wd3: in unsigned(15 downto 0); -- dado a ser gravado
                 clk, we3, rst: in std_logic; -- we3 p/ quando for escrever
@@ -67,8 +67,8 @@ architecture a_calculadora of calculadora is
 
     --signal UC
     signal instr_da_rom: unsigned(15 downto 0);
-    signal rd_para_banco: unsigned(2 downto 0); -- eh pra ser de 5 bits (colocar 00 na frente)
-    signal rr_para_banco: unsigned(2 downto 0);
+    signal rd_para_banco: unsigned(4 downto 0); -- eh pra ser de 5 bits (colocar 00 na frente)
+    signal rr_para_banco: unsigned(4 downto 0);
     signal immediate_value: unsigned(4 downto 0); -- valor para entrar no mux cujo res vai pra in_B da ULA
     signal immediate_flag: std_logic; -- 
     signal addr_pc: unsigned(6 downto 0); -- possivel resultado mux da entrada do PC
@@ -120,6 +120,9 @@ architecture a_calculadora of calculadora is
         );
 
         a_banco: banco_regs port map(
+            a1=>rd_para_banco,
+            a2=>rr_para_banco,
+            a3=>rd_para_banco,
             clk => clk, 
             rst => rst,
             we3 => pc_wr_enable,
