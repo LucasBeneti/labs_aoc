@@ -67,7 +67,7 @@ architecture a_calculadora of calculadora is
 
     --signal UC
     signal instr_da_rom: unsigned(15 downto 0);
-    signal rd_para_banco: unsigned(2 downto 0);
+    signal rd_para_banco: unsigned(2 downto 0); -- eh pra ser de 5 bits (colocar 00 na frente)
     signal rr_para_banco: unsigned(2 downto 0);
     signal immediate_value: unsigned(4 downto 0); -- valor para entrar no mux cujo res vai pra in_B da ULA
     signal immediate_flag: std_logic; -- 
@@ -79,7 +79,7 @@ architecture a_calculadora of calculadora is
     signal rd: unsigned(2 downto 0); -- a1, saida da UC (parte da instr)
     signal rr: unsigned(2 downto 0); -- a2, saida da UC (parte da instr)
     signal sel: unsigned(2 downto 0); -- a3, acredito que o mesmo que rd
-    signal res_ula: unsigned(15 downto 0); -- saida da ula mas é o conteudo do sel
+    --signal res_ula: unsigned(15 downto 0); -- saida da ula mas é o conteudo do sel
     signal saida_1: unsigned(15 downto 0); -- entrada_1 da ULA
     signal saida_2: unsigned(15 downto 0); -- concorrente da entrada_2 da ULA (mux com imm_value)
 
@@ -89,7 +89,9 @@ architecture a_calculadora of calculadora is
     signal opcode_ula: unsigned(5 downto 0); -- vem da UC
     signal res_ula: unsigned(15 downto 0); -- entra no wd3 do banco
 
+    -- rd_para_banco <= "00" & rd_para_banco;
     begin
+        -- rr_para_banco <= "00" & rr_para_banco; ESSAS DUAS SAIDAS VAO TER QUE SER TRATADAS EM ALGUM LUGAR
         a_rom: rom port map(
             clk => clk,
             addr => data_pc_out,
@@ -135,4 +137,4 @@ architecture a_calculadora of calculadora is
 
 -- dar uma olhada melhor nas ligações porque acredito que algumas estão duplicadas
 -- ver certinho se cada componente está fazendo o esperado e se existem todos os signal necessários
-end architecture
+end architecture;
