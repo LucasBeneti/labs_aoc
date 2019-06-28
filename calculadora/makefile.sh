@@ -13,9 +13,9 @@ ghdl -e ula &&
 #ghdl -r ula_tb --stop-time=500ns --wave=ula_tb.ghw
 ghdl -a calculadora.vhd &&
 ghdl -e calculadora &&
-ghdl -a calcladora_tb.vhd &&
+ghdl -a calculadora_tb.vhd &&
 ghdl -e calculadora_tb
-ghdl -r calculadora_tb --stop-time=2000ns --wave=calculadora_tb.ghw
+ghdl -r calculadora_tb --stop-time=4000ns --wave=calculadora_tb.ghw
 #ghdl -a banco_e_ula.vhd &&
 #ghdl -e banco_e_ula &&
 #ghdl -a banco_e_ula_tb.vhd &&

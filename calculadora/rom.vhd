@@ -11,7 +11,7 @@ entity rom is
 end entity;
 
 architecture a_rom of rom is 
-    type mem is array (0 to 127) of unsigned(11 downto 0); --  verificar o que eh esse tipo
+    type mem is array (0 to 127) of unsigned(15 downto 0); --  verificar o que eh esse tipo
     constant rom_content : mem := (
         --caso endereco => conteudo
         0 => b"111000_00101_00011", -- LDI R3, #5

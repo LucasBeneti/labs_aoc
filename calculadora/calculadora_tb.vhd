@@ -42,5 +42,3 @@ architecture a_calculadora_tb of calculadora_tb is
                 wait;
         end process;
 end architecture;
-
--- COMPILAR E VERIFCICAR OS ERROS QUE DÃO NO MAKEFILE
