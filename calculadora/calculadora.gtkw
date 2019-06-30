@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
-[*] Fri Jun 28 03:32:37 2019
+[*] Sun Jun 30 04:55:54 2019
 [*]
 [dumpfile] "/home/lucas/Documents/labs_aoc/calculadora/calculadora_tb.ghw"
-[dumpfile_mtime] "Fri Jun 28 03:31:08 2019"
-[dumpfile_size] 5665
+[dumpfile_mtime] "Sun Jun 30 04:44:58 2019"
+[dumpfile_size] 6216
 [savefile] "/home/lucas/Documents/labs_aoc/calculadora/calculadora.gtkw"
-[timestart] 182000000
+[timestart] 0
 [size] 1920 1056
 [pos] 0 2
-*-29.023540 3213000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-29.147820 1861000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top.
 [treeopen] top.calculadora_tb.
 [treeopen] top.calculadora_tb.uut.
@@ -18,26 +18,47 @@
 [treeopen] top.calculadora_tb.uut.a_uc.
 [treeopen] top.calculadora_tb.uut.a_ula.
 [sst_width] 223
-[signals_width] 264
+[signals_width] 314
 [sst_expanded] 1
-[sst_vpaned_height] 430
+[sst_vpaned_height] 649
 @28
 top.calculadora_tb.rst
 top.calculadora_tb.clk
 top.calculadora_tb.wr_en
 top.calculadora_tb.uut.pc_wr_enable
-@22
-+{pc} #{top.calculadora_tb.uut.a_pc.registro[6:0]} top.calculadora_tb.uut.a_pc.registro[6] top.calculadora_tb.uut.a_pc.registro[5] top.calculadora_tb.uut.a_pc.registro[4] top.calculadora_tb.uut.a_pc.registro[3] top.calculadora_tb.uut.a_pc.registro[2] top.calculadora_tb.uut.a_pc.registro[1] top.calculadora_tb.uut.a_pc.registro[0]
 @24
++{pc} #{top.calculadora_tb.uut.a_pc.registro[6:0]} top.calculadora_tb.uut.a_pc.registro[6] top.calculadora_tb.uut.a_pc.registro[5] top.calculadora_tb.uut.a_pc.registro[4] top.calculadora_tb.uut.a_pc.registro[3] top.calculadora_tb.uut.a_pc.registro[2] top.calculadora_tb.uut.a_pc.registro[1] top.calculadora_tb.uut.a_pc.registro[0]
+@c00024
 #{top.calculadora_tb.uut.a_pc.data_in[6:0]} top.calculadora_tb.uut.a_pc.data_in[6] top.calculadora_tb.uut.a_pc.data_in[5] top.calculadora_tb.uut.a_pc.data_in[4] top.calculadora_tb.uut.a_pc.data_in[3] top.calculadora_tb.uut.a_pc.data_in[2] top.calculadora_tb.uut.a_pc.data_in[1] top.calculadora_tb.uut.a_pc.data_in[0]
+@28
+top.calculadora_tb.uut.a_pc.data_in[6]
+top.calculadora_tb.uut.a_pc.data_in[5]
+top.calculadora_tb.uut.a_pc.data_in[4]
+top.calculadora_tb.uut.a_pc.data_in[3]
+top.calculadora_tb.uut.a_pc.data_in[2]
+top.calculadora_tb.uut.a_pc.data_in[1]
+top.calculadora_tb.uut.a_pc.data_in[0]
+@1401200
+-group_end
+@24
+#{top.calculadora_tb.uut.saida_mux[6:0]} top.calculadora_tb.uut.saida_mux[6] top.calculadora_tb.uut.saida_mux[5] top.calculadora_tb.uut.saida_mux[4] top.calculadora_tb.uut.saida_mux[3] top.calculadora_tb.uut.saida_mux[2] top.calculadora_tb.uut.saida_mux[1] top.calculadora_tb.uut.saida_mux[0]
 #{top.calculadora_tb.uut.a_uc.reg_operando[4:0]} top.calculadora_tb.uut.a_uc.reg_operando[4] top.calculadora_tb.uut.a_uc.reg_operando[3] top.calculadora_tb.uut.a_uc.reg_operando[2] top.calculadora_tb.uut.a_uc.reg_operando[1] top.calculadora_tb.uut.a_uc.reg_operando[0]
 #{top.calculadora_tb.uut.a_uc.reg_destino[4:0]} top.calculadora_tb.uut.a_uc.reg_destino[4] top.calculadora_tb.uut.a_uc.reg_destino[3] top.calculadora_tb.uut.a_uc.reg_destino[2] top.calculadora_tb.uut.a_uc.reg_destino[1] top.calculadora_tb.uut.a_uc.reg_destino[0]
 @28
 #{top.calculadora_tb.uut.a_uc.instr[15:0]} top.calculadora_tb.uut.a_uc.instr[15] top.calculadora_tb.uut.a_uc.instr[14] top.calculadora_tb.uut.a_uc.instr[13] top.calculadora_tb.uut.a_uc.instr[12] top.calculadora_tb.uut.a_uc.instr[11] top.calculadora_tb.uut.a_uc.instr[10] top.calculadora_tb.uut.a_uc.instr[9] top.calculadora_tb.uut.a_uc.instr[8] top.calculadora_tb.uut.a_uc.instr[7] top.calculadora_tb.uut.a_uc.instr[6] top.calculadora_tb.uut.a_uc.instr[5] top.calculadora_tb.uut.a_uc.instr[4] top.calculadora_tb.uut.a_uc.instr[3] top.calculadora_tb.uut.a_uc.instr[2] top.calculadora_tb.uut.a_uc.instr[1] top.calculadora_tb.uut.a_uc.instr[0]
-@22
+@24
 #{top.calculadora_tb.uut.a_ula.out_s[15:0]} top.calculadora_tb.uut.a_ula.out_s[15] top.calculadora_tb.uut.a_ula.out_s[14] top.calculadora_tb.uut.a_ula.out_s[13] top.calculadora_tb.uut.a_ula.out_s[12] top.calculadora_tb.uut.a_ula.out_s[11] top.calculadora_tb.uut.a_ula.out_s[10] top.calculadora_tb.uut.a_ula.out_s[9] top.calculadora_tb.uut.a_ula.out_s[8] top.calculadora_tb.uut.a_ula.out_s[7] top.calculadora_tb.uut.a_ula.out_s[6] top.calculadora_tb.uut.a_ula.out_s[5] top.calculadora_tb.uut.a_ula.out_s[4] top.calculadora_tb.uut.a_ula.out_s[3] top.calculadora_tb.uut.a_ula.out_s[2] top.calculadora_tb.uut.a_ula.out_s[1] top.calculadora_tb.uut.a_ula.out_s[0]
-#{top.calculadora_tb.uut.a_uc.reg_operando[4:0]} top.calculadora_tb.uut.a_uc.reg_operando[4] top.calculadora_tb.uut.a_uc.reg_operando[3] top.calculadora_tb.uut.a_uc.reg_operando[2] top.calculadora_tb.uut.a_uc.reg_operando[1] top.calculadora_tb.uut.a_uc.reg_operando[0]
+@25
+#{top.calculadora_tb.uut.a_banco.reg1[15:0]} top.calculadora_tb.uut.a_banco.reg1[15] top.calculadora_tb.uut.a_banco.reg1[14] top.calculadora_tb.uut.a_banco.reg1[13] top.calculadora_tb.uut.a_banco.reg1[12] top.calculadora_tb.uut.a_banco.reg1[11] top.calculadora_tb.uut.a_banco.reg1[10] top.calculadora_tb.uut.a_banco.reg1[9] top.calculadora_tb.uut.a_banco.reg1[8] top.calculadora_tb.uut.a_banco.reg1[7] top.calculadora_tb.uut.a_banco.reg1[6] top.calculadora_tb.uut.a_banco.reg1[5] top.calculadora_tb.uut.a_banco.reg1[4] top.calculadora_tb.uut.a_banco.reg1[3] top.calculadora_tb.uut.a_banco.reg1[2] top.calculadora_tb.uut.a_banco.reg1[1] top.calculadora_tb.uut.a_banco.reg1[0]
+@24
+#{top.calculadora_tb.uut.a_banco.reg3[15:0]} top.calculadora_tb.uut.a_banco.reg3[15] top.calculadora_tb.uut.a_banco.reg3[14] top.calculadora_tb.uut.a_banco.reg3[13] top.calculadora_tb.uut.a_banco.reg3[12] top.calculadora_tb.uut.a_banco.reg3[11] top.calculadora_tb.uut.a_banco.reg3[10] top.calculadora_tb.uut.a_banco.reg3[9] top.calculadora_tb.uut.a_banco.reg3[8] top.calculadora_tb.uut.a_banco.reg3[7] top.calculadora_tb.uut.a_banco.reg3[6] top.calculadora_tb.uut.a_banco.reg3[5] top.calculadora_tb.uut.a_banco.reg3[4] top.calculadora_tb.uut.a_banco.reg3[3] top.calculadora_tb.uut.a_banco.reg3[2] top.calculadora_tb.uut.a_banco.reg3[1] top.calculadora_tb.uut.a_banco.reg3[0]
+#{top.calculadora_tb.uut.a_banco.reg4[15:0]} top.calculadora_tb.uut.a_banco.reg4[15] top.calculadora_tb.uut.a_banco.reg4[14] top.calculadora_tb.uut.a_banco.reg4[13] top.calculadora_tb.uut.a_banco.reg4[12] top.calculadora_tb.uut.a_banco.reg4[11] top.calculadora_tb.uut.a_banco.reg4[10] top.calculadora_tb.uut.a_banco.reg4[9] top.calculadora_tb.uut.a_banco.reg4[8] top.calculadora_tb.uut.a_banco.reg4[7] top.calculadora_tb.uut.a_banco.reg4[6] top.calculadora_tb.uut.a_banco.reg4[5] top.calculadora_tb.uut.a_banco.reg4[4] top.calculadora_tb.uut.a_banco.reg4[3] top.calculadora_tb.uut.a_banco.reg4[2] top.calculadora_tb.uut.a_banco.reg4[1] top.calculadora_tb.uut.a_banco.reg4[0]
+#{top.calculadora_tb.uut.a_banco.reg5[15:0]} top.calculadora_tb.uut.a_banco.reg5[15] top.calculadora_tb.uut.a_banco.reg5[14] top.calculadora_tb.uut.a_banco.reg5[13] top.calculadora_tb.uut.a_banco.reg5[12] top.calculadora_tb.uut.a_banco.reg5[11] top.calculadora_tb.uut.a_banco.reg5[10] top.calculadora_tb.uut.a_banco.reg5[9] top.calculadora_tb.uut.a_banco.reg5[8] top.calculadora_tb.uut.a_banco.reg5[7] top.calculadora_tb.uut.a_banco.reg5[6] top.calculadora_tb.uut.a_banco.reg5[5] top.calculadora_tb.uut.a_banco.reg5[4] top.calculadora_tb.uut.a_banco.reg5[3] top.calculadora_tb.uut.a_banco.reg5[2] top.calculadora_tb.uut.a_banco.reg5[1] top.calculadora_tb.uut.a_banco.reg5[0]
+@28
+top.calculadora_tb.uut.immediate_flag
+@24
 #{top.calculadora_tb.uut.a_uc.reg_destino[4:0]} top.calculadora_tb.uut.a_uc.reg_destino[4] top.calculadora_tb.uut.a_uc.reg_destino[3] top.calculadora_tb.uut.a_uc.reg_destino[2] top.calculadora_tb.uut.a_uc.reg_destino[1] top.calculadora_tb.uut.a_uc.reg_destino[0]
+#{top.calculadora_tb.uut.a_uc.reg_operando[4:0]} top.calculadora_tb.uut.a_uc.reg_operando[4] top.calculadora_tb.uut.a_uc.reg_operando[3] top.calculadora_tb.uut.a_uc.reg_operando[2] top.calculadora_tb.uut.a_uc.reg_operando[1] top.calculadora_tb.uut.a_uc.reg_operando[0]
 @28
 #{top.calculadora_tb.uut.a_uc.opcode[5:0]} top.calculadora_tb.uut.a_uc.opcode[5] top.calculadora_tb.uut.a_uc.opcode[4] top.calculadora_tb.uut.a_uc.opcode[3] top.calculadora_tb.uut.a_uc.opcode[2] top.calculadora_tb.uut.a_uc.opcode[1] top.calculadora_tb.uut.a_uc.opcode[0]
 #{top.calculadora_tb.uut.a_banco.a1[4:0]} top.calculadora_tb.uut.a_banco.a1[4] top.calculadora_tb.uut.a_banco.a1[3] top.calculadora_tb.uut.a_banco.a1[2] top.calculadora_tb.uut.a_banco.a1[1] top.calculadora_tb.uut.a_banco.a1[0]
@@ -47,10 +68,10 @@ top.calculadora_tb.uut.pc_wr_enable
 #{top.calculadora_tb.uut.a_uc.opcode_s[5:0]} top.calculadora_tb.uut.a_uc.opcode_s[5] top.calculadora_tb.uut.a_uc.opcode_s[4] top.calculadora_tb.uut.a_uc.opcode_s[3] top.calculadora_tb.uut.a_uc.opcode_s[2] top.calculadora_tb.uut.a_uc.opcode_s[1] top.calculadora_tb.uut.a_uc.opcode_s[0]
 #{top.calculadora_tb.uut.a_uc.immediate[15:0]} top.calculadora_tb.uut.a_uc.immediate[15] top.calculadora_tb.uut.a_uc.immediate[14] top.calculadora_tb.uut.a_uc.immediate[13] top.calculadora_tb.uut.a_uc.immediate[12] top.calculadora_tb.uut.a_uc.immediate[11] top.calculadora_tb.uut.a_uc.immediate[10] top.calculadora_tb.uut.a_uc.immediate[9] top.calculadora_tb.uut.a_uc.immediate[8] top.calculadora_tb.uut.a_uc.immediate[7] top.calculadora_tb.uut.a_uc.immediate[6] top.calculadora_tb.uut.a_uc.immediate[5] top.calculadora_tb.uut.a_uc.immediate[4] top.calculadora_tb.uut.a_uc.immediate[3] top.calculadora_tb.uut.a_uc.immediate[2] top.calculadora_tb.uut.a_uc.immediate[1] top.calculadora_tb.uut.a_uc.immediate[0]
 #{top.calculadora_tb.uut.a_uc.reg_operando[4:0]} top.calculadora_tb.uut.a_uc.reg_operando[4] top.calculadora_tb.uut.a_uc.reg_operando[3] top.calculadora_tb.uut.a_uc.reg_operando[2] top.calculadora_tb.uut.a_uc.reg_operando[1] top.calculadora_tb.uut.a_uc.reg_operando[0]
-@22
 #{top.calculadora_tb.uut.a_ula.in_a[15:0]} top.calculadora_tb.uut.a_ula.in_a[15] top.calculadora_tb.uut.a_ula.in_a[14] top.calculadora_tb.uut.a_ula.in_a[13] top.calculadora_tb.uut.a_ula.in_a[12] top.calculadora_tb.uut.a_ula.in_a[11] top.calculadora_tb.uut.a_ula.in_a[10] top.calculadora_tb.uut.a_ula.in_a[9] top.calculadora_tb.uut.a_ula.in_a[8] top.calculadora_tb.uut.a_ula.in_a[7] top.calculadora_tb.uut.a_ula.in_a[6] top.calculadora_tb.uut.a_ula.in_a[5] top.calculadora_tb.uut.a_ula.in_a[4] top.calculadora_tb.uut.a_ula.in_a[3] top.calculadora_tb.uut.a_ula.in_a[2] top.calculadora_tb.uut.a_ula.in_a[1] top.calculadora_tb.uut.a_ula.in_a[0]
 #{top.calculadora_tb.uut.a_ula.in_b[15:0]} top.calculadora_tb.uut.a_ula.in_b[15] top.calculadora_tb.uut.a_ula.in_b[14] top.calculadora_tb.uut.a_ula.in_b[13] top.calculadora_tb.uut.a_ula.in_b[12] top.calculadora_tb.uut.a_ula.in_b[11] top.calculadora_tb.uut.a_ula.in_b[10] top.calculadora_tb.uut.a_ula.in_b[9] top.calculadora_tb.uut.a_ula.in_b[8] top.calculadora_tb.uut.a_ula.in_b[7] top.calculadora_tb.uut.a_ula.in_b[6] top.calculadora_tb.uut.a_ula.in_b[5] top.calculadora_tb.uut.a_ula.in_b[4] top.calculadora_tb.uut.a_ula.in_b[3] top.calculadora_tb.uut.a_ula.in_b[2] top.calculadora_tb.uut.a_ula.in_b[1] top.calculadora_tb.uut.a_ula.in_b[0]
 #{top.calculadora_tb.uut.a_banco.rd1[15:0]} top.calculadora_tb.uut.a_banco.rd1[15] top.calculadora_tb.uut.a_banco.rd1[14] top.calculadora_tb.uut.a_banco.rd1[13] top.calculadora_tb.uut.a_banco.rd1[12] top.calculadora_tb.uut.a_banco.rd1[11] top.calculadora_tb.uut.a_banco.rd1[10] top.calculadora_tb.uut.a_banco.rd1[9] top.calculadora_tb.uut.a_banco.rd1[8] top.calculadora_tb.uut.a_banco.rd1[7] top.calculadora_tb.uut.a_banco.rd1[6] top.calculadora_tb.uut.a_banco.rd1[5] top.calculadora_tb.uut.a_banco.rd1[4] top.calculadora_tb.uut.a_banco.rd1[3] top.calculadora_tb.uut.a_banco.rd1[2] top.calculadora_tb.uut.a_banco.rd1[1] top.calculadora_tb.uut.a_banco.rd1[0]
 #{top.calculadora_tb.uut.a_banco.rd2[15:0]} top.calculadora_tb.uut.a_banco.rd2[15] top.calculadora_tb.uut.a_banco.rd2[14] top.calculadora_tb.uut.a_banco.rd2[13] top.calculadora_tb.uut.a_banco.rd2[12] top.calculadora_tb.uut.a_banco.rd2[11] top.calculadora_tb.uut.a_banco.rd2[10] top.calculadora_tb.uut.a_banco.rd2[9] top.calculadora_tb.uut.a_banco.rd2[8] top.calculadora_tb.uut.a_banco.rd2[7] top.calculadora_tb.uut.a_banco.rd2[6] top.calculadora_tb.uut.a_banco.rd2[5] top.calculadora_tb.uut.a_banco.rd2[4] top.calculadora_tb.uut.a_banco.rd2[3] top.calculadora_tb.uut.a_banco.rd2[2] top.calculadora_tb.uut.a_banco.rd2[1] top.calculadora_tb.uut.a_banco.rd2[0]
+#{top.calculadora_tb.uut.a_banco.reg3[15:0]} top.calculadora_tb.uut.a_banco.reg3[15] top.calculadora_tb.uut.a_banco.reg3[14] top.calculadora_tb.uut.a_banco.reg3[13] top.calculadora_tb.uut.a_banco.reg3[12] top.calculadora_tb.uut.a_banco.reg3[11] top.calculadora_tb.uut.a_banco.reg3[10] top.calculadora_tb.uut.a_banco.reg3[9] top.calculadora_tb.uut.a_banco.reg3[8] top.calculadora_tb.uut.a_banco.reg3[7] top.calculadora_tb.uut.a_banco.reg3[6] top.calculadora_tb.uut.a_banco.reg3[5] top.calculadora_tb.uut.a_banco.reg3[4] top.calculadora_tb.uut.a_banco.reg3[3] top.calculadora_tb.uut.a_banco.reg3[2] top.calculadora_tb.uut.a_banco.reg3[1] top.calculadora_tb.uut.a_banco.reg3[0]
 [pattern_trace] 1
 [pattern_trace] 0

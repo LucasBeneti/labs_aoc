@@ -11,11 +11,12 @@ entity ula is
     );
 end entity;
 
--- LDI -> 111000KKKKKddddd (só falta colocar a impl do LDI)
--- ADD -> 000011rrrrrddddd
--- SUB -> 000110rrrrrddddd
--- MOV -> 001011rrrrrddddd
--- JMP -> 100101KKKKKKKKKK <- fica pra UC e PC se resolverem depois
+-- LDI  -> 111000KKKKKddddd (só falta colocar a impl do LDI)
+-- ADD  -> 000011rrrrrddddd
+-- SUB  -> 000110rrrrrddddd
+-- SUBI -> 000101kkkkkddddd (subtrai de imediato)
+-- MOV  -> 001011rrrrrddddd
+-- JMP  -> 100101KKKKKKKKKK <- fica pra UC e PC se resolverem depois
 
 architecture a_ula of ula is    
     begin
@@ -25,6 +26,7 @@ architecture a_ula of ula is
         out_S <= in_A+in_B when op="000011" else
                 -- in_A/in_B when op="01" else
                 in_A-in_B when op="000110" else
+                in_A-in_B when op="000101" else
                  -- op de LDI, teoricamente aqui to fazendo um append de 11 bits na frente dos 5 do imediato findo
                 in_B when op="001011" else -- op de MOV
                 "0000000000000000";

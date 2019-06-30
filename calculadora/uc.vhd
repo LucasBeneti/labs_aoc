@@ -39,7 +39,8 @@ begin
                 '0';
 
     imm_flag <=  '1' when opcode_s = "111000" else
-            '0';
+                 '1' when opcode_s = "000101" else -- implementado agora
+                 '0';
 
     addr_uc <= instr(6 downto 0);
     
@@ -51,13 +52,16 @@ begin
                     instr(9 downto 5);
 
     immediate <= "00000000000" & instr(9 downto 5) when opcode_s = "111000" else -- se for op para LDI
+                 "00000000000" & instr(9 downto 5) when opcode_s = "000110" else
+                 "00000000000" & instr(9 downto 5) when opcode_s = "000101" else
                  "00000000000" & "00000";
                     
     opcode <= opcode_s; -- verificar se isso pode
 end architecture;
 
--- LDI -> 111000KKKKKddddd
--- ADD -> 000011rrrrrddddd
--- SUB -> 000110rrrrrddddd
--- MOV -> 001011rrrrrddddd
--- JMP -> 100101KKKKKKKKKK
+-- LDI  -> 111000KKKKKddddd (só falta colocar a impl do LDI)
+-- ADD  -> 000011rrrrrddddd
+-- SUB  -> 000110rrrrrddddd
+-- SUBI -> 000101kkkkkddddd (subtrai de imediato)
+-- MOV  -> 001011rrrrrddddd
+-- JMP  -> 100101KKKKKKKKKK <- fica pra UC e PC se resolverem depois

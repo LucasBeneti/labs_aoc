@@ -15,10 +15,10 @@ architecture a_rom of rom is
     constant rom_content : mem := (
         --caso endereco => conteudo
         0 => b"111000_00101_00011", -- LDI R3, #5
-        1 => b"111000_00100_01000", -- LDI R4, #8
+        1 => b"111000_01000_00100", -- LDI R4, #8
         2 => b"000011_00100_00011", -- ADD R3, R4 (res vai ficar no R4)
         3 => b"001011_00011_00101", -- MOV R5, R3
-        4 => b"000110_00001_00101", -- SUB R5, #1
+        4 => b"000101_00001_00101", -- SUBI R5, #1
         5 => b"100101_00000_10100", -- JMP #20 (acho que tem que ser binario ou hexa)
         6 => b"000000_00000_00000",
         7 => b"000000_00000_00000",
@@ -47,8 +47,9 @@ architecture a_rom of rom is
         end process;
 end architecture;
         
--- LDI -> 111000KKKKKddddd
--- ADD -> 000011rrrrrddddd
--- SUB -> 000110rrrrrddddd
--- MOV -> 001011rrrrrddddd
--- JMP -> 100101KKKKKKKKKK
+-- LDI  -> 111000KKKKKddddd (só falta colocar a impl do LDI)
+-- ADD  -> 000011rrrrrddddd
+-- SUB  -> 000110rrrrrddddd
+-- SUBI -> 000101kkkkkddddd (subtrai de imediato)
+-- MOV  -> 001011rrrrrddddd
+-- JMP  -> 100101KKKKKKKKKK <- fica pra UC e PC se resolverem depois

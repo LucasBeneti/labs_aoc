@@ -79,12 +79,14 @@ architecture a_calculadora of calculadora is
     signal addr_pc: unsigned(6 downto 0); -- possivel resultado mux da entrada do PC
     signal jump_enable: std_logic; -- determina mux da entrada do PC
     signal addr_uc_s: unsigned(6 downto 0);
+    signal immed_ldi: unsigned(4 downto 0);
     -- signal opcode_ula: unsigned(5 downto 0);
 
     --signal Banco
     -- signal rd: unsigned(2 downto 0); -- a1, saida da UC (parte da instr)
     -- signal rr: unsigned(2 downto 0); -- a2, saida da UC (parte da instr)
     signal sel: unsigned(2 downto 0); -- a3, acredito que o mesmo que rd
+    signal data_banco: unsigned(15 downto 0);
     --signal res_ula: unsigned(15 downto 0); -- saida da ula mas é o conteudo do sel
     signal saida_1: unsigned(15 downto 0); -- entrada_1 da ULA
     signal saida_2: unsigned(15 downto 0); -- concorrente da entrada_2 da ULA (mux com imm_value)
@@ -133,7 +135,7 @@ architecture a_calculadora of calculadora is
             clk => clk, 
             rst => rst,
             we3 => pc_wr_enable,
-            wd3 => res_ula,
+            wd3 => data_banco,
             rd1 => saida_1,
             rd2 => saida_2
         );
@@ -145,12 +147,19 @@ architecture a_calculadora of calculadora is
             out_S => res_ula
         );
 
-    saida_mux <= addr_uc_s when jump_enable='1' else
+    addr_uc_s <= instruction(6 downto 0);
+    saida_mux <= instruction(6 downto 0) when jump_enable='1' else
                  data_pc_out + "0000001";
 
-    addr_uc_s <= instruction(6 downto 0);
+    -- se opcode for LDI
+    immed_ldi <= instruction(9 downto 5) when opcode_ula="111000" else
+                 "00000";
+    data_banco <= "00000000000" & immed_ldi when opcode_ula="111000" else
+                  res_ula;
 
-
+    immediate_flag <= '1' when opcode_ula="000101" else
+                                    '0';
+    saida_2 <= 
 
 
 
