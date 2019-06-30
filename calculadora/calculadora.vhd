@@ -96,7 +96,7 @@ architecture a_calculadora of calculadora is
     --signal entrada_2: unsigned(15 downto 0); -- vem do mux que depende de coisa da UC
     signal opcode_ula: unsigned(5 downto 0); -- vem da UC
     signal res_ula: unsigned(15 downto 0); -- entra no wd3 do banco
-
+    signal in_B_mux_ula: unsigned(15 downto 0);
     -- rd_para_banco <= "00" & rd_para_banco;
     begin
         -- rr_para_banco <= "00" & rr_para_banco; ESSAS DUAS SAIDAS VAO TER QUE SER TRATADAS EM ALGUM LUGAR
@@ -142,11 +142,11 @@ architecture a_calculadora of calculadora is
 
         a_ula: ula port map(
             in_A => saida_1,
-            in_B => saida_2,
+            in_B => in_B_mux_ula, -- saida do mux para in_B
             op => opcode_ula,
             out_S => res_ula
         );
-
+    -- opcode_ula <= isntruction(15 downto 10);
     addr_uc_s <= instruction(6 downto 0);
     saida_mux <= instruction(6 downto 0) when jump_enable='1' else
                  data_pc_out + "0000001";
@@ -158,8 +158,9 @@ architecture a_calculadora of calculadora is
                   res_ula;
 
     immediate_flag <= '1' when opcode_ula="000101" else
-                                    '0';
-    saida_2 <= 
+                      '0';
+    in_B_mux_ula <= immediate_value when immediate_flag = '1' else
+                    saida_2;
 
 
 

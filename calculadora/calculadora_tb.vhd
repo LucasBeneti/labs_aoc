@@ -39,6 +39,7 @@ architecture a_calculadora_tb of calculadora_tb is
         process
             begin
                 wr_en <= '1';
+                wait for 100 ns;
                 wait;
         end process;
 end architecture;

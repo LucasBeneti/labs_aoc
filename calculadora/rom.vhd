@@ -1,3 +1,4 @@
+-- O código em assembly estará no .txt contido na pasta para melhor explicação.
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -35,7 +36,7 @@ architecture a_rom of rom is
         18 => b"000000_00000_00000",
         19 => b"000000_00000_00000",
         20 => b"001011_00101_00011", -- MOV R3, R5
-        21 => b"100101_00000_00011", -- JMP #3 (ou pro endereço 2, que é onde tem o que ele cita no exercicio)
+        21 => b"100101_00000_00010", -- JMP #3 (ou pro endereço 2, que é onde tem o que ele cita no exercicio)
         others => (others=>'0')
     );
     begin

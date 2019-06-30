@@ -36,10 +36,9 @@ begin
                '0';
 
     pc_wr_en <= '1' when estate = '1' else
-                '0';
+                '0';    
 
-    imm_flag <=  '1' when opcode_s = "111000" else
-                 '1' when opcode_s = "000101" else -- implementado agora
+    imm_flag <=  '1' when opcode_s = "000101" else -- implementado agora
                  '0';
 
     addr_uc <= instr(6 downto 0);
@@ -49,6 +48,7 @@ begin
 
     reg_operando <= "00000" when opcode_s = "100101" else -- JMP
                     "00000" when opcode_s = "111000" else -- LDI
+                    "00000" when opcode_s = "000101" else -- SUBI
                     instr(9 downto 5);
 
     immediate <= "00000000000" & instr(9 downto 5) when opcode_s = "111000" else -- se for op para LDI
