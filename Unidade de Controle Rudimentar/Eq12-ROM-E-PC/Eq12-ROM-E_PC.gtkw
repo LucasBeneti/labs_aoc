@@ -1,0 +1,36 @@
+[*]
+[*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
+[*] Fri Jul  5 03:49:15 2019
+[*]
+[dumpfile] "/home/lucas/Documents/labs_aoc/Unidade de Controle Rudimentar/eq12_rom_e_pc_tb.ghw"
+[dumpfile_mtime] "Fri Jul  5 03:45:11 2019"
+[dumpfile_size] 1794
+[savefile] "/home/lucas/Documents/labs_aoc/Unidade de Controle Rudimentar/entrega_salva.gtkw"
+[timestart] 0
+[size] 1679 710
+[pos] -1 -1
+*-29.319622 2000000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.eq12_rom_e_pc_tb.
+[treeopen] top.eq12_rom_e_pc_tb.uut.
+[treeopen] top.eq12_rom_e_pc_tb.uut.a_pc.
+[treeopen] top.eq12_rom_e_pc_tb.uut.a_rom.
+[treeopen] top.eq12_rom_e_pc_tb.uut.a_uc.
+[sst_width] 223
+[signals_width] 261
+[sst_expanded] 1
+[sst_vpaned_height] 199
+@28
+top.eq12_rom_e_pc_tb.rst
+top.eq12_rom_e_pc_tb.clk
+top.eq12_rom_e_pc_tb.uut.pc_write_en
+@29
+top.eq12_rom_e_pc_tb.uut.jump_enable
+#{top.eq12_rom_e_pc_tb.data_out[11:0]} top.eq12_rom_e_pc_tb.data_out[11] top.eq12_rom_e_pc_tb.data_out[10] top.eq12_rom_e_pc_tb.data_out[9] top.eq12_rom_e_pc_tb.data_out[8] top.eq12_rom_e_pc_tb.data_out[7] top.eq12_rom_e_pc_tb.data_out[6] top.eq12_rom_e_pc_tb.data_out[5] top.eq12_rom_e_pc_tb.data_out[4] top.eq12_rom_e_pc_tb.data_out[3] top.eq12_rom_e_pc_tb.data_out[2] top.eq12_rom_e_pc_tb.data_out[1] top.eq12_rom_e_pc_tb.data_out[0]
++{data_pc} #{top.eq12_rom_e_pc_tb.uut.a_pc.registro[6:0]} top.eq12_rom_e_pc_tb.uut.a_pc.registro[6] top.eq12_rom_e_pc_tb.uut.a_pc.registro[5] top.eq12_rom_e_pc_tb.uut.a_pc.registro[4] top.eq12_rom_e_pc_tb.uut.a_pc.registro[3] top.eq12_rom_e_pc_tb.uut.a_pc.registro[2] top.eq12_rom_e_pc_tb.uut.a_pc.registro[1] top.eq12_rom_e_pc_tb.uut.a_pc.registro[0]
++{addr_rom} #{top.eq12_rom_e_pc_tb.uut.a_rom.addr[6:0]} top.eq12_rom_e_pc_tb.uut.a_rom.addr[6] top.eq12_rom_e_pc_tb.uut.a_rom.addr[5] top.eq12_rom_e_pc_tb.uut.a_rom.addr[4] top.eq12_rom_e_pc_tb.uut.a_rom.addr[3] top.eq12_rom_e_pc_tb.uut.a_rom.addr[2] top.eq12_rom_e_pc_tb.uut.a_rom.addr[1] top.eq12_rom_e_pc_tb.uut.a_rom.addr[0]
++{instr_rom} #{top.eq12_rom_e_pc_tb.uut.a_rom.data[11:0]} top.eq12_rom_e_pc_tb.uut.a_rom.data[11] top.eq12_rom_e_pc_tb.uut.a_rom.data[10] top.eq12_rom_e_pc_tb.uut.a_rom.data[9] top.eq12_rom_e_pc_tb.uut.a_rom.data[8] top.eq12_rom_e_pc_tb.uut.a_rom.data[7] top.eq12_rom_e_pc_tb.uut.a_rom.data[6] top.eq12_rom_e_pc_tb.uut.a_rom.data[5] top.eq12_rom_e_pc_tb.uut.a_rom.data[4] top.eq12_rom_e_pc_tb.uut.a_rom.data[3] top.eq12_rom_e_pc_tb.uut.a_rom.data[2] top.eq12_rom_e_pc_tb.uut.a_rom.data[1] top.eq12_rom_e_pc_tb.uut.a_rom.data[0]
+#{top.eq12_rom_e_pc_tb.uut.a_uc.opcode[2:0]} top.eq12_rom_e_pc_tb.uut.a_uc.opcode[2] top.eq12_rom_e_pc_tb.uut.a_uc.opcode[1] top.eq12_rom_e_pc_tb.uut.a_uc.opcode[0]
+#{top.eq12_rom_e_pc_tb.uut.a_uc.addr_uc[6:0]} top.eq12_rom_e_pc_tb.uut.a_uc.addr_uc[6] top.eq12_rom_e_pc_tb.uut.a_uc.addr_uc[5] top.eq12_rom_e_pc_tb.uut.a_uc.addr_uc[4] top.eq12_rom_e_pc_tb.uut.a_uc.addr_uc[3] top.eq12_rom_e_pc_tb.uut.a_uc.addr_uc[2] top.eq12_rom_e_pc_tb.uut.a_uc.addr_uc[1] top.eq12_rom_e_pc_tb.uut.a_uc.addr_uc[0]
+[pattern_trace] 1
+[pattern_trace] 0

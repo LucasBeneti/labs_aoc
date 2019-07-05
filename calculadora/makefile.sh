@@ -4,6 +4,8 @@ ghdl -a pc.vhd &&
 ghdl -e pc &&
 ghdl -a uc.vhd &&
 ghdl -e uc &&
+ghdl -a reg16bits.vhd &&
+ghdl -e reg16bits &&
 ghdl -a banco_regs.vhd &&
 ghdl -e banco_regs
 ghdl -a ula.vhd &&

@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity rom is
+entity Eq12_rom is
     port(
         clk: in std_logic;
         addr: in unsigned(6 downto 0);
@@ -10,7 +10,7 @@ entity rom is
     );
 end entity;
 
-architecture a_rom of rom is 
+architecture a_rom of Eq12_rom is 
     type mem is array (0 to 127) of unsigned(11 downto 0); --  verificar o que eh esse tipo
     constant rom_content : mem := (
         --caso endereco => conteudo

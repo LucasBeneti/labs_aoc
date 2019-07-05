@@ -2,11 +2,11 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity rom_e_pc_tb is
+entity Eq12_rom_e_pc_tb is
 end entity;
 
-architecture a_rom_e_pc_tb of rom_e_pc_tb is
-    component rom_e_pc
+architecture a_rom_e_pc_tb of Eq12_rom_e_pc_tb is
+    component Eq12_rom_e_pc
     port(
         clk, rst: in std_logic;
         data_out: out unsigned(11 downto 0) -- saida ROM
@@ -19,7 +19,7 @@ architecture a_rom_e_pc_tb of rom_e_pc_tb is
     signal data_out: unsigned(11 downto 0);
 
     begin
-        uut: rom_e_pc port map(
+        uut: Eq12_rom_e_pc port map(
             clk=>clk,rst=>rst,
             data_out=>data_out
         );

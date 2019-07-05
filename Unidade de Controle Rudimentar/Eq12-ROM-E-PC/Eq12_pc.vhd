@@ -6,7 +6,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity pc is
+entity Eq12_pc is
     port(
         clk, wr_en, rst: in std_logic;
         data_in: in unsigned(6 downto 0);
@@ -14,7 +14,7 @@ entity pc is
     );
 end entity;
 
-architecture a_pc of pc is
+architecture a_pc of Eq12_pc is
     signal registro:unsigned(6 downto 0);
 
     begin

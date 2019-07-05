@@ -2,11 +2,11 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity maq_estados_tb is
+entity Eq12_maq_estados_tb is
 end entity;
 
-architecture a_maq_estados_tb of maq_estados_tb is
-    component maq_estados
+architecture a_maq_estados_tb of Eq12_maq_estados_tb is
+    component Eq12_maq_estados
         port(
             clk, rst: in std_logic;
             estado: out unsigned(1 downto 0)
