@@ -1,22 +1,22 @@
 v 4
-file . "calculadora_tb.vhd" "7909165b223e494829480e42e2c2e0d439fc9af9" "20190708045510.968":
-  entity calculadora_tb at 1( 0) + 0 on 1043;
-  architecture a_calculadora_tb of calculadora_tb at 8( 108) + 0 on 1044;
-file . "uc.vhd" "2afa7788f054a2920d843ed5ba59d3a6ba625ad2" "20190708045509.968":
-  entity uc at 1( 0) + 0 on 1033;
-  architecture a_uc of uc at 20( 656) + 0 on 1034;
-file . "rom.vhd" "8bac43850755904d69bf35dfd11d433bbeb3d5f1" "20190708045509.674":
-  entity rom at 2( 84) + 0 on 1029;
-  architecture a_rom of rom at 14( 304) + 0 on 1030;
-file . "calculadora.vhd" "53f058876151d9e9be7e991f2cf09a934c5b22e5" "20190708045510.709":
-  entity calculadora at 4( 164) + 0 on 1041;
-  architecture a_calculadora of calculadora at 15( 325) + 0 on 1042;
-file . "reg16bits.vhd" "0e1ec35594380873a2d36561d56a3b13ba1a81ce" "20190708045510.148":
-  entity reg16bits at 1( 0) + 0 on 1035;
-  architecture a_reg16bits of reg16bits at 14( 293) + 0 on 1036;
-file . "banco_regs.vhd" "7f7435489ab68cf787056385fd198a0391ac3d5b" "20190708045510.275":
-  entity banco_regs at 6( 275) + 0 on 1037;
-  architecture a_banco of banco_regs at 20( 819) + 0 on 1038;
+file . "calculadora_tb.vhd" "7909165b223e494829480e42e2c2e0d439fc9af9" "20190709043425.391":
+  entity calculadora_tb at 1( 0) + 0 on 1155;
+  architecture a_calculadora_tb of calculadora_tb at 8( 108) + 0 on 1156;
+file . "uc.vhd" "5af6ef950d0be77f594e2021afefddc9edcdc9c5" "20190709043424.402":
+  entity uc at 1( 0) + 0 on 1145;
+  architecture a_uc of uc at 20( 656) + 0 on 1146;
+file . "rom.vhd" "3131a3d8cd0bcf08fa6c495b8bb2cc712d678b3b" "20190709043424.124":
+  entity rom at 2( 84) + 0 on 1141;
+  architecture a_rom of rom at 14( 304) + 0 on 1142;
+file . "calculadora.vhd" "ca2d65e70c1bf7d91173f59646a665955c7696ec" "20190709043425.114":
+  entity calculadora at 4( 164) + 0 on 1153;
+  architecture a_calculadora of calculadora at 15( 325) + 0 on 1154;
+file . "reg16bits.vhd" "0e1ec35594380873a2d36561d56a3b13ba1a81ce" "20190709043424.568":
+  entity reg16bits at 1( 0) + 0 on 1147;
+  architecture a_reg16bits of reg16bits at 14( 293) + 0 on 1148;
+file . "banco_regs.vhd" "7f7435489ab68cf787056385fd198a0391ac3d5b" "20190709043424.694":
+  entity banco_regs at 6( 275) + 0 on 1149;
+  architecture a_banco of banco_regs at 20( 819) + 0 on 1150;
 file . "ula_tb.vhd" "40d6b9e33d3e91665301b6214761a0cf37eee574" "20190624000655.401":
   entity ula_tb at 1( 0) + 0 on 189;
   architecture a_ula_tb of ula_tb at 8( 100) + 0 on 190;
@@ -26,9 +26,9 @@ file . "maq_estados_tb.vhd" "b02e6997ef778726f18c9bc84a49a0d9527cfd04" "20190612
 file . "maq_estados.vhd" "d2d79e3f986364d7e1858be56a665ab4e8ca3225" "20190612020843.896":
   entity maq_estados at 1( 0) + 0 on 29;
   architecture a_maq_estados of maq_estados at 11( 192) + 0 on 30;
-file . "ula.vhd" "72fd73ddc5ea059f8d5f441d1dd5bcc48fe7a13a" "20190708045510.520":
-  entity ula at 1( 0) + 0 on 1039;
-  architecture a_ula of ula at 22( 571) + 0 on 1040;
+file . "ula.vhd" "c593f9331b2496bccb67814dce3d423e76abd414" "20190709043424.941":
+  entity ula at 1( 0) + 0 on 1151;
+  architecture a_ula of ula at 23( 662) + 0 on 1152;
 file . "banco_e_ula.vhd" "e83099cc4e43718f5f9dbf2117ff9dc3eef63ed7" "20190624001356.654":
   entity banco_e_ula at 1( 0) + 0 on 207;
   architecture a_banco_e_ula of banco_e_ula at 20( 830) + 0 on 208;
@@ -38,6 +38,6 @@ file . "banco_regs_tb.vhd" "dce5f7d854e5aeafc9d552232ee8c15e1feab874" "201906231
 file . "banco_e_ula_tb.vhd" "fa7f848d0c7b1718b7c781aa09bd4d29b16c8614" "20190624001356.835":
   entity banco_e_ula_tb at 1( 0) + 0 on 209;
   architecture a_banco_e_ula_tb of banco_e_ula_tb at 8( 108) + 0 on 210;
-file . "pc.vhd" "6250969aad279a49cb5f26c49a598d2b3d34e352" "20190708045509.830":
-  entity pc at 1( 0) + 0 on 1031;
-  architecture a_pc of pc at 13( 237) + 0 on 1032;
+file . "pc.vhd" "6250969aad279a49cb5f26c49a598d2b3d34e352" "20190709043424.260":
+  entity pc at 1( 0) + 0 on 1143;
+  architecture a_pc of pc at 13( 237) + 0 on 1144;

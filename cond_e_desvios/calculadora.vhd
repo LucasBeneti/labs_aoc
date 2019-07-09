@@ -54,7 +54,7 @@ architecture a_calculadora of calculadora is
     component ula is 
         port(   in_A, in_B: in unsigned(15 downto 0);
                 op: in unsigned(5 downto 0);
-                -- flag_maior: out std_logic;
+                flag: out unsigned(1 downto 0);
                 out_S: out unsigned(15 downto 0)
         );
     end component;
@@ -95,6 +95,7 @@ architecture a_calculadora of calculadora is
     signal opcode_ula: unsigned(5 downto 0); -- vem da UC
     signal res_ula: unsigned(15 downto 0); -- entra no wd3 do banco
     signal in_B_mux_ula: unsigned(15 downto 0);
+    signal flag_sig: unsigned(1 downto 0);
     -- rd_para_banco <= "00" & rd_para_banco;
     begin
         -- rr_para_banco <= "00" & rr_para_banco; ESSAS DUAS SAIDAS VAO TER QUE SER TRATADAS EM ALGUM LUGAR
@@ -142,7 +143,8 @@ architecture a_calculadora of calculadora is
             in_A => saida_1,
             in_B => in_B_mux_ula, -- saida do mux para in_B
             op => opcode_ula,
-            out_S => res_ula
+            flag=>flag_sig,
+            out_S => res_ula        
         );
     -- opcode_ula <= isntruction(15 downto 10);
     addr_uc_s <= instruction(6 downto 0);
@@ -156,7 +158,6 @@ architecture a_calculadora of calculadora is
                   res_ula;
 
     immediate_flag <= '1' when opcode_ula="000101" else -- SUBI
-                      '1' when opcode_ula="000100" else -- ADDI
                       '0';
     in_B_mux_ula <= immediate_value when immediate_flag = '1' else
                     saida_2;

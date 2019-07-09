@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
-[*] Mon Jul  8 04:46:52 2019
+[*] Tue Jul  9 04:34:02 2019
 [*]
 [dumpfile] "/home/lucas/Documents/labs_aoc/cond_e_desvios/calculadora_tb.ghw"
-[dumpfile_mtime] "Mon Jul  8 04:42:52 2019"
-[dumpfile_size] 6483
+[dumpfile_mtime] "Tue Jul  9 04:32:30 2019"
+[dumpfile_size] 8412
 [savefile] "/home/lucas/Documents/labs_aoc/cond_e_desvios/teste_calc.gtkw"
 [timestart] 0
 [size] 1696 944
-[pos] 194 30
-*-29.227192 992000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[pos] 724 244
+*-29.227192 1822000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top.
 [treeopen] top.calculadora_tb.
 [treeopen] top.calculadora_tb.uut.
@@ -26,9 +26,9 @@ top.calculadora_tb.wr_en
 @24
 #{top.calculadora_tb.uut.a_ula.in_b[15:0]} top.calculadora_tb.uut.a_ula.in_b[15] top.calculadora_tb.uut.a_ula.in_b[14] top.calculadora_tb.uut.a_ula.in_b[13] top.calculadora_tb.uut.a_ula.in_b[12] top.calculadora_tb.uut.a_ula.in_b[11] top.calculadora_tb.uut.a_ula.in_b[10] top.calculadora_tb.uut.a_ula.in_b[9] top.calculadora_tb.uut.a_ula.in_b[8] top.calculadora_tb.uut.a_ula.in_b[7] top.calculadora_tb.uut.a_ula.in_b[6] top.calculadora_tb.uut.a_ula.in_b[5] top.calculadora_tb.uut.a_ula.in_b[4] top.calculadora_tb.uut.a_ula.in_b[3] top.calculadora_tb.uut.a_ula.in_b[2] top.calculadora_tb.uut.a_ula.in_b[1] top.calculadora_tb.uut.a_ula.in_b[0]
 #{top.calculadora_tb.uut.a_ula.in_a[15:0]} top.calculadora_tb.uut.a_ula.in_a[15] top.calculadora_tb.uut.a_ula.in_a[14] top.calculadora_tb.uut.a_ula.in_a[13] top.calculadora_tb.uut.a_ula.in_a[12] top.calculadora_tb.uut.a_ula.in_a[11] top.calculadora_tb.uut.a_ula.in_a[10] top.calculadora_tb.uut.a_ula.in_a[9] top.calculadora_tb.uut.a_ula.in_a[8] top.calculadora_tb.uut.a_ula.in_a[7] top.calculadora_tb.uut.a_ula.in_a[6] top.calculadora_tb.uut.a_ula.in_a[5] top.calculadora_tb.uut.a_ula.in_a[4] top.calculadora_tb.uut.a_ula.in_a[3] top.calculadora_tb.uut.a_ula.in_a[2] top.calculadora_tb.uut.a_ula.in_a[1] top.calculadora_tb.uut.a_ula.in_a[0]
-@25
 #{top.calculadora_tb.uut.res_ula[15:0]} top.calculadora_tb.uut.res_ula[15] top.calculadora_tb.uut.res_ula[14] top.calculadora_tb.uut.res_ula[13] top.calculadora_tb.uut.res_ula[12] top.calculadora_tb.uut.res_ula[11] top.calculadora_tb.uut.res_ula[10] top.calculadora_tb.uut.res_ula[9] top.calculadora_tb.uut.res_ula[8] top.calculadora_tb.uut.res_ula[7] top.calculadora_tb.uut.res_ula[6] top.calculadora_tb.uut.res_ula[5] top.calculadora_tb.uut.res_ula[4] top.calculadora_tb.uut.res_ula[3] top.calculadora_tb.uut.res_ula[2] top.calculadora_tb.uut.res_ula[1] top.calculadora_tb.uut.res_ula[0]
 @28
+#{top.calculadora_tb.uut.a_ula.flag[1:0]} top.calculadora_tb.uut.a_ula.flag[1] top.calculadora_tb.uut.a_ula.flag[0]
 #{top.calculadora_tb.uut.opcode_ula[5:0]} top.calculadora_tb.uut.opcode_ula[5] top.calculadora_tb.uut.opcode_ula[4] top.calculadora_tb.uut.opcode_ula[3] top.calculadora_tb.uut.opcode_ula[2] top.calculadora_tb.uut.opcode_ula[1] top.calculadora_tb.uut.opcode_ula[0]
 [pattern_trace] 1
 [pattern_trace] 0

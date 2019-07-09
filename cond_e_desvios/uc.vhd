@@ -39,7 +39,6 @@ begin
                 '0';    
 
     imm_flag <=  '1' when opcode_s = "000101" else -- implementado SUBI
-                 '1' when opcode_s = "000100" else -- ADDI
                  '0';
 
     addr_uc <= instr(6 downto 0);
@@ -50,13 +49,11 @@ begin
     reg_operando <= "00000" when opcode_s = "100101" else -- JMP
                     "00000" when opcode_s = "111000" else -- LDI
                     "00000" when opcode_s = "000101" else -- SUBI
-                    "00000" when opcode_s = "000100" else -- ADDI
                     instr(9 downto 5);
 
     immediate <= "00000000000" & instr(9 downto 5) when opcode_s = "111000" else -- se for op para LDI
                  --"00000000000" & instr(9 downto 5) when opcode_s = "000110" else
                  "00000000000" & instr(9 downto 5) when opcode_s = "000101" else -- SUBI
-                 "00000000000" & instr(9 downto 5) when opcode_s = "000100" else -- ADDI
                  "00000000000" & "00000";
                     
     opcode <= opcode_s; -- verificar se isso pode
