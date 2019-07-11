@@ -7,7 +7,13 @@ entity ula is
         in_A, in_B: in unsigned(15 downto 0);
         op: in unsigned(5 downto 0);
         flag: out unsigned(1 downto 0); -- 2 bits: 00 igual, 01 maior, 10 menor
-        out_S: out unsigned(15 downto 0)
+        out_S: out unsigned(15 downto 0);
+
+        clk: in std_logic;
+        rst: in std_logic;
+        we3: in std_logic;
+        wd3: in unsigned(1 downto 0);
+        data_out: out unsigned(15 downto 0)
     );
 end entity;
 
@@ -21,6 +27,7 @@ end entity;
 -- CP   -> 001010rrrrrddddd <- compara dois regs
 
 architecture a_ula of ula is    
+
     begin
         -- flag_maior <= '1'when op="10" and in_A>in_B else
         --               '0';
@@ -34,9 +41,9 @@ architecture a_ula of ula is
                 "0000000000000000";
 
         -- impl. da flag de CP do processador
-        flag <= "00" when in_A=in_B and op="001010" else
-                "01" when in_A>in_B and op="001010" else
-                "10" when in_A<in_B and op="001010" else
+        flag <= "00" when in_A=in_B else
+                "01" when in_A>in_B else
+                "10" when in_A<in_B else
                 "11";
 end architecture;
 

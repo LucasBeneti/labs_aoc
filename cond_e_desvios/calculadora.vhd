@@ -156,7 +156,7 @@ architecture a_calculadora of calculadora is
     addr_relativo <= signed(instruction(6 downto 0)) when flag_sig = "10" else
                      "0000000";
     saida_mux <= instruction(6 downto 0) when jump_enable='1' else
-                 unsigned(signed(data_pc_out) + addr_relativo) when flag_sig="10" else
+                 unsigned(signed(data_pc_out) + addr_relativo) when flag_sig="10" and opcode_ula = "111100" else
                  data_pc_out + "0000001";
 
     -- se opcode for LDI

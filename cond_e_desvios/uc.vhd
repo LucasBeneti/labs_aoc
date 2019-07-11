@@ -46,6 +46,7 @@ begin
     
     reg_destino <=  "00000" when opcode_s = "100101" else -- JMP
                     "00000" when opcode_s = "111100" else -- BRLT
+                    "00000" when opcode_s = "001010" else -- CP
                     instr(4 downto 0);
 
     reg_operando <= "00000" when opcode_s = "100101" else -- JMP
