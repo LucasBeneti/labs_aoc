@@ -22,7 +22,7 @@ architecture a_rom of rom is
         4 => b"000011_00001_00011", -- ADD R3, R1
         5 => b"111000_11110_00010", -- LDI R2, #30
         6 => b"001010_00010_00011", -- CP  R3, R2 (compara os dois regs e seta uma flag da relacao)
-        7 => b"000000_00000_00000", -- BRLT instr3 (ainda náo sei como implementar)
+        7 => b"111100_00011_11100", -- BRLT instr3 ()
         8 => b"000000_00000_00000",
         9 => b"000000_00000_00000",
         10 => b"000000_00000_00000",

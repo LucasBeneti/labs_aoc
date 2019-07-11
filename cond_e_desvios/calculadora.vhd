@@ -97,6 +97,10 @@ architecture a_calculadora of calculadora is
     signal in_B_mux_ula: unsigned(15 downto 0);
     signal flag_sig: unsigned(1 downto 0);
     -- rd_para_banco <= "00" & rd_para_banco;
+
+
+    signal addr_relativo: signed(6 downto 0);
+    
     begin
         -- rr_para_banco <= "00" & rr_para_banco; ESSAS DUAS SAIDAS VAO TER QUE SER TRATADAS EM ALGUM LUGAR
         a_rom: rom port map(
@@ -148,7 +152,11 @@ architecture a_calculadora of calculadora is
         );
     -- opcode_ula <= isntruction(15 downto 10);
     addr_uc_s <= instruction(6 downto 0);
+
+    addr_relativo <= signed(instruction(6 downto 0)) when flag_sig = "10" else
+                     "0000000";
     saida_mux <= instruction(6 downto 0) when jump_enable='1' else
+                 unsigned(signed(data_pc_out) + addr_relativo) when flag_sig="10" else
                  data_pc_out + "0000001";
 
     -- se opcode for LDI

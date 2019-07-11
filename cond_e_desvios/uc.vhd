@@ -9,6 +9,7 @@ entity uc is
         instr: in unsigned(15 downto 0);-- vem da ROM
         addr_uc: out unsigned(6 downto 0); -- address out (para o jump)
         jump_en: out std_logic;
+        -- flag_s: out unsigned(1 downto 0); -- flag para BRLT
         reg_destino: out unsigned(4 downto 0); -- reg destino da operacao
         reg_operando: out unsigned(4 downto 0); -- reg usado na operacao
         imm_flag: out std_logic; -- flag para ver se operacao sera com imediato (LDI)
@@ -44,11 +45,13 @@ begin
     addr_uc <= instr(6 downto 0);
     
     reg_destino <=  "00000" when opcode_s = "100101" else -- JMP
+                    "00000" when opcode_s = "111100" else -- BRLT
                     instr(4 downto 0);
 
     reg_operando <= "00000" when opcode_s = "100101" else -- JMP
                     "00000" when opcode_s = "111000" else -- LDI
                     "00000" when opcode_s = "000101" else -- SUBI
+                    "00000" when opcode_s = "111100" else -- BRLT
                     instr(9 downto 5);
 
     immediate <= "00000000000" & instr(9 downto 5) when opcode_s = "111000" else -- se for op para LDI
@@ -66,4 +69,5 @@ end architecture;
 -- MOV  -> 001011rrrrrddddd
 -- JMP  -> 100101KKKKKKKKKK <- fica pra UC e PC se resolverem depois
 
--- CP -> 001010rrrrrddddd (depois dela qualquer branch pode ser usado)
+-- CP   -> 001010rrrrrddddd (depois dela qualquer branch pode ser usado)
+-- BRLT -> 111100000skkkkkk (jump relativo com contante sendo signed)
