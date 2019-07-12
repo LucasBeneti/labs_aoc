@@ -23,8 +23,8 @@ architecture a_rom of rom is
         5 => b"111000_11110_00010", -- LDI R2, #30
         6 => b"001010_00010_00011", -- CP  R3, R2 (compara os dois regs e seta uma flag da relacao)
         7 => b"111100_00011_11100", -- BRLT instr3 ()
-        8 => b"000000_00000_00000",
-        9 => b"000000_00000_00000",
+        8 => b"000000_00000_00000", -- colocar aqui a ultima instr. pra passar o valor de R5 pro R4 algo assim
+        9 => b"000000_00000_00000", -- tem que fazer a condicao da flag de CP pra não ser sempre o BRLT que é executado
         10 => b"000000_00000_00000",
         11 => b"000000_00000_00000",
         12 => b"000000_00000_00000",

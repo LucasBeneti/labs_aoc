@@ -14,4 +14,4 @@ ghdl -a calculadora.vhd &&
 ghdl -e calculadora &&
 ghdl -a calculadora_tb.vhd &&
 ghdl -e calculadora_tb
-ghdl -r calculadora_tb --stop-time=10000ns --wave=calculadora_tb.ghw
+ghdl -r calculadora_tb --stop-time=100000ns --wave=calculadora_tb.ghw

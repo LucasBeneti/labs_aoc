@@ -1,19 +1,22 @@
 [*]
 [*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
-[*] Thu Jul 11 15:45:47 2019
+[*] Fri Jul 12 01:05:11 2019
 [*]
 [dumpfile] "/home/lucas/Documents/labs_aoc/cond_e_desvios/calculadora_tb.ghw"
-[dumpfile_mtime] "Thu Jul 11 06:13:10 2019"
-[dumpfile_size] 5647
+[dumpfile_mtime] "Thu Jul 11 22:07:46 2019"
+[dumpfile_size] 11234
 [savefile] "/home/lucas/Documents/labs_aoc/cond_e_desvios/teste_calc.gtkw"
-[timestart] 1062000000
+[timestart] 0
 [size] 1366 747
 [pos] 724 244
-*-27.849466 1468000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-31.171394 3700000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top.
 [treeopen] top.calculadora_tb.
 [treeopen] top.calculadora_tb.uut.
+[treeopen] top.calculadora_tb.uut.a_banco.
+[treeopen] top.calculadora_tb.uut.a_banco.regist3.
 [treeopen] top.calculadora_tb.uut.a_pc.
+[treeopen] top.calculadora_tb.uut.a_reg16bits.
 [treeopen] top.calculadora_tb.uut.a_rom.
 [treeopen] top.calculadora_tb.uut.a_uc.
 [treeopen] top.calculadora_tb.uut.a_ula.
@@ -35,10 +38,13 @@ top.calculadora_tb.wr_en
 @24
 #{top.calculadora_tb.uut.a_pc.registro[6:0]} top.calculadora_tb.uut.a_pc.registro[6] top.calculadora_tb.uut.a_pc.registro[5] top.calculadora_tb.uut.a_pc.registro[4] top.calculadora_tb.uut.a_pc.registro[3] top.calculadora_tb.uut.a_pc.registro[2] top.calculadora_tb.uut.a_pc.registro[1] top.calculadora_tb.uut.a_pc.registro[0]
 #{top.calculadora_tb.uut.saida_mux[6:0]} top.calculadora_tb.uut.saida_mux[6] top.calculadora_tb.uut.saida_mux[5] top.calculadora_tb.uut.saida_mux[4] top.calculadora_tb.uut.saida_mux[3] top.calculadora_tb.uut.saida_mux[2] top.calculadora_tb.uut.saida_mux[1] top.calculadora_tb.uut.saida_mux[0]
+@420
 #{top.calculadora_tb.uut.addr_relativo[6:0]} top.calculadora_tb.uut.addr_relativo[6] top.calculadora_tb.uut.addr_relativo[5] top.calculadora_tb.uut.addr_relativo[4] top.calculadora_tb.uut.addr_relativo[3] top.calculadora_tb.uut.addr_relativo[2] top.calculadora_tb.uut.addr_relativo[1] top.calculadora_tb.uut.addr_relativo[0]
-@29
-top.calculadora_tb.uut.a_uc.estate
+@25
+#{top.calculadora_tb.uut.a_banco.regist3.registro[15:0]} top.calculadora_tb.uut.a_banco.regist3.registro[15] top.calculadora_tb.uut.a_banco.regist3.registro[14] top.calculadora_tb.uut.a_banco.regist3.registro[13] top.calculadora_tb.uut.a_banco.regist3.registro[12] top.calculadora_tb.uut.a_banco.regist3.registro[11] top.calculadora_tb.uut.a_banco.regist3.registro[10] top.calculadora_tb.uut.a_banco.regist3.registro[9] top.calculadora_tb.uut.a_banco.regist3.registro[8] top.calculadora_tb.uut.a_banco.regist3.registro[7] top.calculadora_tb.uut.a_banco.regist3.registro[6] top.calculadora_tb.uut.a_banco.regist3.registro[5] top.calculadora_tb.uut.a_banco.regist3.registro[4] top.calculadora_tb.uut.a_banco.regist3.registro[3] top.calculadora_tb.uut.a_banco.regist3.registro[2] top.calculadora_tb.uut.a_banco.regist3.registro[1] top.calculadora_tb.uut.a_banco.regist3.registro[0]
 @28
+top.calculadora_tb.uut.a_uc.estate
+#{top.calculadora_tb.uut.a_reg16bits.registro[15:0]} top.calculadora_tb.uut.a_reg16bits.registro[15] top.calculadora_tb.uut.a_reg16bits.registro[14] top.calculadora_tb.uut.a_reg16bits.registro[13] top.calculadora_tb.uut.a_reg16bits.registro[12] top.calculadora_tb.uut.a_reg16bits.registro[11] top.calculadora_tb.uut.a_reg16bits.registro[10] top.calculadora_tb.uut.a_reg16bits.registro[9] top.calculadora_tb.uut.a_reg16bits.registro[8] top.calculadora_tb.uut.a_reg16bits.registro[7] top.calculadora_tb.uut.a_reg16bits.registro[6] top.calculadora_tb.uut.a_reg16bits.registro[5] top.calculadora_tb.uut.a_reg16bits.registro[4] top.calculadora_tb.uut.a_reg16bits.registro[3] top.calculadora_tb.uut.a_reg16bits.registro[2] top.calculadora_tb.uut.a_reg16bits.registro[1] top.calculadora_tb.uut.a_reg16bits.registro[0]
 #{top.calculadora_tb.uut.instruction[15:0]} top.calculadora_tb.uut.instruction[15] top.calculadora_tb.uut.instruction[14] top.calculadora_tb.uut.instruction[13] top.calculadora_tb.uut.instruction[12] top.calculadora_tb.uut.instruction[11] top.calculadora_tb.uut.instruction[10] top.calculadora_tb.uut.instruction[9] top.calculadora_tb.uut.instruction[8] top.calculadora_tb.uut.instruction[7] top.calculadora_tb.uut.instruction[6] top.calculadora_tb.uut.instruction[5] top.calculadora_tb.uut.instruction[4] top.calculadora_tb.uut.instruction[3] top.calculadora_tb.uut.instruction[2] top.calculadora_tb.uut.instruction[1] top.calculadora_tb.uut.instruction[0]
 [pattern_trace] 1
 [pattern_trace] 0

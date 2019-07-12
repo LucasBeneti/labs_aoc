@@ -7,13 +7,7 @@ entity ula is
         in_A, in_B: in unsigned(15 downto 0);
         op: in unsigned(5 downto 0);
         flag: out unsigned(1 downto 0); -- 2 bits: 00 igual, 01 maior, 10 menor
-        out_S: out unsigned(15 downto 0);
-
-        clk: in std_logic;
-        rst: in std_logic;
-        we3: in std_logic;
-        wd3: in unsigned(1 downto 0);
-        data_out: out unsigned(15 downto 0)
+        out_S: out unsigned(15 downto 0)
     );
 end entity;
 

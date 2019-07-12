@@ -59,6 +59,16 @@ architecture a_calculadora of calculadora is
         );
     end component;
 
+    component reg16bits is -- para salvar flag
+        port(   
+                clk: in std_logic;
+                rst: in std_logic;
+                we3: in std_logic;
+                wd3: in unsigned(15 downto 0);
+                data_out: out unsigned(15 downto 0)
+            );
+    end component;
+
     -- signal clk_s,rst_s: std_lof
 
     --signals ROM
@@ -98,6 +108,10 @@ architecture a_calculadora of calculadora is
     signal flag_sig: unsigned(1 downto 0);
     -- rd_para_banco <= "00" & rd_para_banco;
 
+    -- signal Reg16bits (salvar flag)
+    signal data_flag_in: unsigned(15 downto 0); -- entrada do reg
+    signal en_wr: std_logic;
+    signal data_flag_out: unsigned(15 downto 0);
 
     signal addr_relativo: signed(6 downto 0);
     
@@ -150,13 +164,27 @@ architecture a_calculadora of calculadora is
             flag=>flag_sig,
             out_S => res_ula        
         );
+
+        a_reg16bits: reg16bits port map(
+            clk=> clk,
+            rst=> rst,
+            we3=> en_wr,
+            wd3=> data_flag_in,
+            data_out => data_flag_out
+        );
+
+    en_wr <= '1' when opcode_ula="001010" else
+             '0';
+    data_flag_in <= "00000000000000" & flag_sig;
+    
+
     -- opcode_ula <= isntruction(15 downto 10);
     addr_uc_s <= instruction(6 downto 0);
 
-    addr_relativo <= signed(instruction(6 downto 0)) when flag_sig = "10" else
-                     "0000000";
+    addr_relativo <= signed(instruction(6 downto 0));
+    
     saida_mux <= instruction(6 downto 0) when jump_enable='1' else
-                 unsigned(signed(data_pc_out) + addr_relativo) when flag_sig="10" and opcode_ula = "111100" else
+                 unsigned(signed(data_pc_out) + addr_relativo) when data_flag_out(1 downto 0) = "10" and opcode_ula = "111100" else
                  data_pc_out + "0000001";
 
     -- se opcode for LDI
