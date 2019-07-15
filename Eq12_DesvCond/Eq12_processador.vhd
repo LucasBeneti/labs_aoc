@@ -1,34 +1,33 @@
--- Rever estrutura e lógica do banco e da ULA. Deve ser o banco o problema,
--- porque os dados de saidas não estão saindo. Resolvendo isso deve estar completo.
+-- Equipe 12            Autor: Lucas Silva Beneti
 
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity calculadora is
+entity Eq12_processador is
     port(
         clk, rst, wr_en: in std_logic
     );
 
 end entity;
 
-architecture a_calculadora of calculadora is
+architecture a_calculadora of Eq12_processador is
 
-    component rom is 
+    component Eq12_rom is 
         port(   clk: in std_logic;
                 addr: in unsigned(6 downto 0);
                 data: out unsigned(15 downto 0)
         );
     end component;
 
-    component pc is 
+    component Eq12_pc is 
         port(   clk, wr_en, rst: in std_logic;
                 data_in: in unsigned(6 downto 0);
                 data_out: out unsigned(6 downto 0)
         );
     end component;
 
-    component uc is 
+    component Eq12_uc is 
         port(   clk, rst: in std_logic;
                 pc_wr_en: out std_logic;
                 instr: in unsigned(15 downto 0);-- vem da ROM
@@ -42,7 +41,7 @@ architecture a_calculadora of calculadora is
         );
     end component;
 
-    component banco_regs is 
+    component Eq12_banco_regs is 
         port(   a1, a2, a3: in unsigned(4 downto 0); -- 5 bits para escolher entre os 32 regs (nao coloquei 32 ainda)
                 --reg_out_a, reg_out_b: out unsigned(2 downto 0); -- 3 bits para escolher entre os 8 regs
                 wd3: in unsigned(15 downto 0); -- dado a ser gravado
@@ -51,7 +50,7 @@ architecture a_calculadora of calculadora is
         );
     end component;
 
-    component ula is 
+    component Eq12_ula is 
         port(   in_A, in_B: in unsigned(15 downto 0);
                 op: in unsigned(5 downto 0);
                 flag: out unsigned(1 downto 0);
@@ -59,7 +58,7 @@ architecture a_calculadora of calculadora is
         );
     end component;
 
-    component reg16bits is -- para salvar flag
+    component Eq12_reg16bits is -- para salvar flag
         port(   
                 clk: in std_logic;
                 rst: in std_logic;
@@ -106,7 +105,6 @@ architecture a_calculadora of calculadora is
     signal res_ula: unsigned(15 downto 0); -- entra no wd3 do banco
     signal in_B_mux_ula: unsigned(15 downto 0);
     signal flag_sig: unsigned(1 downto 0);
-    -- rd_para_banco <= "00" & rd_para_banco;
 
     -- signal Reg16bits (salvar flag)
     signal data_flag_in: unsigned(15 downto 0); -- entrada do reg
@@ -116,14 +114,13 @@ architecture a_calculadora of calculadora is
     signal addr_relativo: signed(6 downto 0);
     
     begin
-        -- rr_para_banco <= "00" & rr_para_banco; ESSAS DUAS SAIDAS VAO TER QUE SER TRATADAS EM ALGUM LUGAR
-        a_rom: rom port map(
+        a_rom: Eq12_rom port map(
             clk => clk,
             addr => data_pc_out,
             data => instruction
         );
 
-        a_pc: pc port map(
+        a_pc: Eq12_pc port map(
             clk => clk,
             wr_en => pc_wr_enable,
             rst => rst,
@@ -131,7 +128,7 @@ architecture a_calculadora of calculadora is
             data_out => data_pc_out
         );
 
-        a_uc: uc port map(
+        a_uc: Eq12_uc port map(
             clk => clk, 
             rst => rst,
             pc_wr_en => pc_wr_enable,
@@ -145,7 +142,7 @@ architecture a_calculadora of calculadora is
             opcode => opcode_ula
         );
 
-        a_banco: banco_regs port map(
+        a_banco: Eq12_banco_regs port map(
             a1=>rd_para_banco,
             a2=>rr_para_banco,
             a3=>rd_para_banco,
@@ -157,7 +154,7 @@ architecture a_calculadora of calculadora is
             rd2 => saida_2
         );
 
-        a_ula: ula port map(
+        a_ula: Eq12_ula port map(
             in_A => saida_1,
             in_B => in_B_mux_ula, -- saida do mux para in_B
             op => opcode_ula,
@@ -165,7 +162,7 @@ architecture a_calculadora of calculadora is
             out_S => res_ula        
         );
 
-        a_reg16bits: reg16bits port map(
+        a_reg16bits: Eq12_reg16bits port map(
             clk=> clk,
             rst=> rst,
             we3=> en_wr,

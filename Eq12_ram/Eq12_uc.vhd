@@ -1,8 +1,10 @@
+-- Equipe 12            Autor: Lucas Silva Beneti
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity uc is
+entity Eq12_uc is
     port(
         clk, rst: in std_logic;
         pc_wr_en: out std_logic;
@@ -18,7 +20,7 @@ entity uc is
     );
 end entity;
 
-architecture a_uc of uc is
+architecture a_uc of Eq12_uc is
     signal opcode_s: unsigned(5 downto 0);
     signal estate: std_logic;
 

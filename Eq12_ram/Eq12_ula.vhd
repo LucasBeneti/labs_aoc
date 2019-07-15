@@ -1,8 +1,9 @@
+-- Equipe 12            Autor: Lucas Silva Beneti
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity ula is
+entity Eq12_ula is
     port(
         in_A, in_B: in unsigned(15 downto 0);
         op: in unsigned(5 downto 0);
@@ -18,9 +19,10 @@ end entity;
 -- SUBI -> 000101kkkkkddddd (subtrai de imediato)
 -- MOV  -> 001011rrrrrddddd
 -- JMP  -> 100101KKKKKKKKKK <- fica pra UC e PC se resolverem depois
--- CP   -> 001010rrrrrddddd <- compara dois regs
+-- CP   -> 001010rrrrrddddd (depois dela qualquer branch pode ser usado)
+-- BRLT -> 111100000skkkkkk (jump relativo com contante sendo signed)
 
-architecture a_ula of ula is    
+architecture a_ula of Eq12_ula is    
 
     begin
         -- flag_maior <= '1'when op="10" and in_A>in_B else

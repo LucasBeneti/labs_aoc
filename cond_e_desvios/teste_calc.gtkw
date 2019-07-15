@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
-[*] Fri Jul 12 01:05:11 2019
+[*] Sat Jul 13 02:03:35 2019
 [*]
 [dumpfile] "/home/lucas/Documents/labs_aoc/cond_e_desvios/calculadora_tb.ghw"
-[dumpfile_mtime] "Thu Jul 11 22:07:46 2019"
-[dumpfile_size] 11234
+[dumpfile_mtime] "Sat Jul 13 01:55:16 2019"
+[dumpfile_size] 85478
 [savefile] "/home/lucas/Documents/labs_aoc/cond_e_desvios/teste_calc.gtkw"
-[timestart] 0
-[size] 1366 747
-[pos] 724 244
-*-31.171394 3700000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[timestart] 31842000000
+[size] 1920 1056
+[pos] -1 -1
+*-30.050817 36235000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top.
 [treeopen] top.calculadora_tb.
 [treeopen] top.calculadora_tb.uut.
@@ -21,9 +21,9 @@
 [treeopen] top.calculadora_tb.uut.a_uc.
 [treeopen] top.calculadora_tb.uut.a_ula.
 [sst_width] 223
-[signals_width] 278
+[signals_width] 314
 [sst_expanded] 1
-[sst_vpaned_height] 425
+[sst_vpaned_height] 643
 @28
 top.calculadora_tb.clk
 top.calculadora_tb.rst
@@ -40,11 +40,20 @@ top.calculadora_tb.wr_en
 #{top.calculadora_tb.uut.saida_mux[6:0]} top.calculadora_tb.uut.saida_mux[6] top.calculadora_tb.uut.saida_mux[5] top.calculadora_tb.uut.saida_mux[4] top.calculadora_tb.uut.saida_mux[3] top.calculadora_tb.uut.saida_mux[2] top.calculadora_tb.uut.saida_mux[1] top.calculadora_tb.uut.saida_mux[0]
 @420
 #{top.calculadora_tb.uut.addr_relativo[6:0]} top.calculadora_tb.uut.addr_relativo[6] top.calculadora_tb.uut.addr_relativo[5] top.calculadora_tb.uut.addr_relativo[4] top.calculadora_tb.uut.addr_relativo[3] top.calculadora_tb.uut.addr_relativo[2] top.calculadora_tb.uut.addr_relativo[1] top.calculadora_tb.uut.addr_relativo[0]
-@25
-#{top.calculadora_tb.uut.a_banco.regist3.registro[15:0]} top.calculadora_tb.uut.a_banco.regist3.registro[15] top.calculadora_tb.uut.a_banco.regist3.registro[14] top.calculadora_tb.uut.a_banco.regist3.registro[13] top.calculadora_tb.uut.a_banco.regist3.registro[12] top.calculadora_tb.uut.a_banco.regist3.registro[11] top.calculadora_tb.uut.a_banco.regist3.registro[10] top.calculadora_tb.uut.a_banco.regist3.registro[9] top.calculadora_tb.uut.a_banco.regist3.registro[8] top.calculadora_tb.uut.a_banco.regist3.registro[7] top.calculadora_tb.uut.a_banco.regist3.registro[6] top.calculadora_tb.uut.a_banco.regist3.registro[5] top.calculadora_tb.uut.a_banco.regist3.registro[4] top.calculadora_tb.uut.a_banco.regist3.registro[3] top.calculadora_tb.uut.a_banco.regist3.registro[2] top.calculadora_tb.uut.a_banco.regist3.registro[1] top.calculadora_tb.uut.a_banco.regist3.registro[0]
 @28
 top.calculadora_tb.uut.a_uc.estate
-#{top.calculadora_tb.uut.a_reg16bits.registro[15:0]} top.calculadora_tb.uut.a_reg16bits.registro[15] top.calculadora_tb.uut.a_reg16bits.registro[14] top.calculadora_tb.uut.a_reg16bits.registro[13] top.calculadora_tb.uut.a_reg16bits.registro[12] top.calculadora_tb.uut.a_reg16bits.registro[11] top.calculadora_tb.uut.a_reg16bits.registro[10] top.calculadora_tb.uut.a_reg16bits.registro[9] top.calculadora_tb.uut.a_reg16bits.registro[8] top.calculadora_tb.uut.a_reg16bits.registro[7] top.calculadora_tb.uut.a_reg16bits.registro[6] top.calculadora_tb.uut.a_reg16bits.registro[5] top.calculadora_tb.uut.a_reg16bits.registro[4] top.calculadora_tb.uut.a_reg16bits.registro[3] top.calculadora_tb.uut.a_reg16bits.registro[2] top.calculadora_tb.uut.a_reg16bits.registro[1] top.calculadora_tb.uut.a_reg16bits.registro[0]
 #{top.calculadora_tb.uut.instruction[15:0]} top.calculadora_tb.uut.instruction[15] top.calculadora_tb.uut.instruction[14] top.calculadora_tb.uut.instruction[13] top.calculadora_tb.uut.instruction[12] top.calculadora_tb.uut.instruction[11] top.calculadora_tb.uut.instruction[10] top.calculadora_tb.uut.instruction[9] top.calculadora_tb.uut.instruction[8] top.calculadora_tb.uut.instruction[7] top.calculadora_tb.uut.instruction[6] top.calculadora_tb.uut.instruction[5] top.calculadora_tb.uut.instruction[4] top.calculadora_tb.uut.instruction[3] top.calculadora_tb.uut.instruction[2] top.calculadora_tb.uut.instruction[1] top.calculadora_tb.uut.instruction[0]
+@24
+#{top.calculadora_tb.uut.a_banco.reg3[15:0]} top.calculadora_tb.uut.a_banco.reg3[15] top.calculadora_tb.uut.a_banco.reg3[14] top.calculadora_tb.uut.a_banco.reg3[13] top.calculadora_tb.uut.a_banco.reg3[12] top.calculadora_tb.uut.a_banco.reg3[11] top.calculadora_tb.uut.a_banco.reg3[10] top.calculadora_tb.uut.a_banco.reg3[9] top.calculadora_tb.uut.a_banco.reg3[8] top.calculadora_tb.uut.a_banco.reg3[7] top.calculadora_tb.uut.a_banco.reg3[6] top.calculadora_tb.uut.a_banco.reg3[5] top.calculadora_tb.uut.a_banco.reg3[4] top.calculadora_tb.uut.a_banco.reg3[3] top.calculadora_tb.uut.a_banco.reg3[2] top.calculadora_tb.uut.a_banco.reg3[1] top.calculadora_tb.uut.a_banco.reg3[0]
+#{top.calculadora_tb.uut.a_banco.reg4[15:0]} top.calculadora_tb.uut.a_banco.reg4[15] top.calculadora_tb.uut.a_banco.reg4[14] top.calculadora_tb.uut.a_banco.reg4[13] top.calculadora_tb.uut.a_banco.reg4[12] top.calculadora_tb.uut.a_banco.reg4[11] top.calculadora_tb.uut.a_banco.reg4[10] top.calculadora_tb.uut.a_banco.reg4[9] top.calculadora_tb.uut.a_banco.reg4[8] top.calculadora_tb.uut.a_banco.reg4[7] top.calculadora_tb.uut.a_banco.reg4[6] top.calculadora_tb.uut.a_banco.reg4[5] top.calculadora_tb.uut.a_banco.reg4[4] top.calculadora_tb.uut.a_banco.reg4[3] top.calculadora_tb.uut.a_banco.reg4[2] top.calculadora_tb.uut.a_banco.reg4[1] top.calculadora_tb.uut.a_banco.reg4[0]
+@28
+#{top.calculadora_tb.uut.a_reg16bits.registro[15:0]} top.calculadora_tb.uut.a_reg16bits.registro[15] top.calculadora_tb.uut.a_reg16bits.registro[14] top.calculadora_tb.uut.a_reg16bits.registro[13] top.calculadora_tb.uut.a_reg16bits.registro[12] top.calculadora_tb.uut.a_reg16bits.registro[11] top.calculadora_tb.uut.a_reg16bits.registro[10] top.calculadora_tb.uut.a_reg16bits.registro[9] top.calculadora_tb.uut.a_reg16bits.registro[8] top.calculadora_tb.uut.a_reg16bits.registro[7] top.calculadora_tb.uut.a_reg16bits.registro[6] top.calculadora_tb.uut.a_reg16bits.registro[5] top.calculadora_tb.uut.a_reg16bits.registro[4] top.calculadora_tb.uut.a_reg16bits.registro[3] top.calculadora_tb.uut.a_reg16bits.registro[2] top.calculadora_tb.uut.a_reg16bits.registro[1] top.calculadora_tb.uut.a_reg16bits.registro[0]
+@24
+#{top.calculadora_tb.uut.data_flag_in[15:0]} top.calculadora_tb.uut.data_flag_in[15] top.calculadora_tb.uut.data_flag_in[14] top.calculadora_tb.uut.data_flag_in[13] top.calculadora_tb.uut.data_flag_in[12] top.calculadora_tb.uut.data_flag_in[11] top.calculadora_tb.uut.data_flag_in[10] top.calculadora_tb.uut.data_flag_in[9] top.calculadora_tb.uut.data_flag_in[8] top.calculadora_tb.uut.data_flag_in[7] top.calculadora_tb.uut.data_flag_in[6] top.calculadora_tb.uut.data_flag_in[5] top.calculadora_tb.uut.data_flag_in[4] top.calculadora_tb.uut.data_flag_in[3] top.calculadora_tb.uut.data_flag_in[2] top.calculadora_tb.uut.data_flag_in[1] top.calculadora_tb.uut.data_flag_in[0]
+#{top.calculadora_tb.uut.a_banco.reg2[15:0]} top.calculadora_tb.uut.a_banco.reg2[15] top.calculadora_tb.uut.a_banco.reg2[14] top.calculadora_tb.uut.a_banco.reg2[13] top.calculadora_tb.uut.a_banco.reg2[12] top.calculadora_tb.uut.a_banco.reg2[11] top.calculadora_tb.uut.a_banco.reg2[10] top.calculadora_tb.uut.a_banco.reg2[9] top.calculadora_tb.uut.a_banco.reg2[8] top.calculadora_tb.uut.a_banco.reg2[7] top.calculadora_tb.uut.a_banco.reg2[6] top.calculadora_tb.uut.a_banco.reg2[5] top.calculadora_tb.uut.a_banco.reg2[4] top.calculadora_tb.uut.a_banco.reg2[3] top.calculadora_tb.uut.a_banco.reg2[2] top.calculadora_tb.uut.a_banco.reg2[1] top.calculadora_tb.uut.a_banco.reg2[0]
+@22
+#{top.calculadora_tb.uut.a_banco.a1[4:0]} top.calculadora_tb.uut.a_banco.a1[4] top.calculadora_tb.uut.a_banco.a1[3] top.calculadora_tb.uut.a_banco.a1[2] top.calculadora_tb.uut.a_banco.a1[1] top.calculadora_tb.uut.a_banco.a1[0]
+@23
+#{top.calculadora_tb.uut.a_banco.a2[4:0]} top.calculadora_tb.uut.a_banco.a2[4] top.calculadora_tb.uut.a_banco.a2[3] top.calculadora_tb.uut.a_banco.a2[2] top.calculadora_tb.uut.a_banco.a2[1] top.calculadora_tb.uut.a_banco.a2[0]
 [pattern_trace] 1
 [pattern_trace] 0
