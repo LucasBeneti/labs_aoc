@@ -1,0 +1,27 @@
+[*]
+[*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
+[*] Fri Jun 21 00:05:08 2019
+[*]
+[dumpfile] "/home/lucas/Documents/labs_aoc/calculadora/ula_tb.ghw"
+[dumpfile_mtime] "Fri Jun 21 00:02:57 2019"
+[dumpfile_size] 795
+[savefile] "/home/lucas/Documents/labs_aoc/calculadora/interesse.gtkw"
+[timestart] 0
+[size] 1333 600
+[pos] 32 -870
+*-25.032755 92900000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.ula_tb.
+[treeopen] top.ula_tb.uut.
+[sst_width] 223
+[signals_width] 198
+[sst_expanded] 1
+[sst_vpaned_height] 160
+@29
+#{top.ula_tb.op[5:0]} top.ula_tb.op[5] top.ula_tb.op[4] top.ula_tb.op[3] top.ula_tb.op[2] top.ula_tb.op[1] top.ula_tb.op[0]
+@24
+#{top.ula_tb.out_s[15:0]} top.ula_tb.out_s[15] top.ula_tb.out_s[14] top.ula_tb.out_s[13] top.ula_tb.out_s[12] top.ula_tb.out_s[11] top.ula_tb.out_s[10] top.ula_tb.out_s[9] top.ula_tb.out_s[8] top.ula_tb.out_s[7] top.ula_tb.out_s[6] top.ula_tb.out_s[5] top.ula_tb.out_s[4] top.ula_tb.out_s[3] top.ula_tb.out_s[2] top.ula_tb.out_s[1] top.ula_tb.out_s[0]
+#{top.ula_tb.in_b[15:0]} top.ula_tb.in_b[15] top.ula_tb.in_b[14] top.ula_tb.in_b[13] top.ula_tb.in_b[12] top.ula_tb.in_b[11] top.ula_tb.in_b[10] top.ula_tb.in_b[9] top.ula_tb.in_b[8] top.ula_tb.in_b[7] top.ula_tb.in_b[6] top.ula_tb.in_b[5] top.ula_tb.in_b[4] top.ula_tb.in_b[3] top.ula_tb.in_b[2] top.ula_tb.in_b[1] top.ula_tb.in_b[0]
+#{top.ula_tb.in_a[15:0]} top.ula_tb.in_a[15] top.ula_tb.in_a[14] top.ula_tb.in_a[13] top.ula_tb.in_a[12] top.ula_tb.in_a[11] top.ula_tb.in_a[10] top.ula_tb.in_a[9] top.ula_tb.in_a[8] top.ula_tb.in_a[7] top.ula_tb.in_a[6] top.ula_tb.in_a[5] top.ula_tb.in_a[4] top.ula_tb.in_a[3] top.ula_tb.in_a[2] top.ula_tb.in_a[1] top.ula_tb.in_a[0]
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
+[*] Sat Jul 13 18:49:41 2019
+[*]
+[dumpfile] "/home/lucas/Documents/labs_aoc/Eq12_DesvCond/eq12_processador_tb.ghw"
+[dumpfile_mtime] "Sat Jul 13 18:37:11 2019"
+[dumpfile_size] 69165
+[savefile] "/home/lucas/Documents/labs_aoc/Eq12_DesvCond/Eq12_DesvCond.gtkw"
+[timestart] 0
+[size] 1920 1056
+[pos] -1 -1
+*-33.804604 35250000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.eq12_processador_tb.
+[treeopen] top.eq12_processador_tb.uut.
+[treeopen] top.eq12_processador_tb.uut.a_banco.
+[treeopen] top.eq12_processador_tb.uut.a_pc.
+[sst_width] 223
+[signals_width] 326
+[sst_expanded] 1
+[sst_vpaned_height] 320
+@28
+top.eq12_processador_tb.clk
+@24
++{PC} #{top.eq12_processador_tb.uut.a_pc.registro[6:0]} top.eq12_processador_tb.uut.a_pc.registro[6] top.eq12_processador_tb.uut.a_pc.registro[5] top.eq12_processador_tb.uut.a_pc.registro[4] top.eq12_processador_tb.uut.a_pc.registro[3] top.eq12_processador_tb.uut.a_pc.registro[2] top.eq12_processador_tb.uut.a_pc.registro[1] top.eq12_processador_tb.uut.a_pc.registro[0]
+#{top.eq12_processador_tb.uut.a_banco.reg3[15:0]} top.eq12_processador_tb.uut.a_banco.reg3[15] top.eq12_processador_tb.uut.a_banco.reg3[14] top.eq12_processador_tb.uut.a_banco.reg3[13] top.eq12_processador_tb.uut.a_banco.reg3[12] top.eq12_processador_tb.uut.a_banco.reg3[11] top.eq12_processador_tb.uut.a_banco.reg3[10] top.eq12_processador_tb.uut.a_banco.reg3[9] top.eq12_processador_tb.uut.a_banco.reg3[8] top.eq12_processador_tb.uut.a_banco.reg3[7] top.eq12_processador_tb.uut.a_banco.reg3[6] top.eq12_processador_tb.uut.a_banco.reg3[5] top.eq12_processador_tb.uut.a_banco.reg3[4] top.eq12_processador_tb.uut.a_banco.reg3[3] top.eq12_processador_tb.uut.a_banco.reg3[2] top.eq12_processador_tb.uut.a_banco.reg3[1] top.eq12_processador_tb.uut.a_banco.reg3[0]
+#{top.eq12_processador_tb.uut.a_banco.reg4[15:0]} top.eq12_processador_tb.uut.a_banco.reg4[15] top.eq12_processador_tb.uut.a_banco.reg4[14] top.eq12_processador_tb.uut.a_banco.reg4[13] top.eq12_processador_tb.uut.a_banco.reg4[12] top.eq12_processador_tb.uut.a_banco.reg4[11] top.eq12_processador_tb.uut.a_banco.reg4[10] top.eq12_processador_tb.uut.a_banco.reg4[9] top.eq12_processador_tb.uut.a_banco.reg4[8] top.eq12_processador_tb.uut.a_banco.reg4[7] top.eq12_processador_tb.uut.a_banco.reg4[6] top.eq12_processador_tb.uut.a_banco.reg4[5] top.eq12_processador_tb.uut.a_banco.reg4[4] top.eq12_processador_tb.uut.a_banco.reg4[3] top.eq12_processador_tb.uut.a_banco.reg4[2] top.eq12_processador_tb.uut.a_banco.reg4[1] top.eq12_processador_tb.uut.a_banco.reg4[0]
+@25
+#{top.eq12_processador_tb.uut.a_banco.reg5[15:0]} top.eq12_processador_tb.uut.a_banco.reg5[15] top.eq12_processador_tb.uut.a_banco.reg5[14] top.eq12_processador_tb.uut.a_banco.reg5[13] top.eq12_processador_tb.uut.a_banco.reg5[12] top.eq12_processador_tb.uut.a_banco.reg5[11] top.eq12_processador_tb.uut.a_banco.reg5[10] top.eq12_processador_tb.uut.a_banco.reg5[9] top.eq12_processador_tb.uut.a_banco.reg5[8] top.eq12_processador_tb.uut.a_banco.reg5[7] top.eq12_processador_tb.uut.a_banco.reg5[6] top.eq12_processador_tb.uut.a_banco.reg5[5] top.eq12_processador_tb.uut.a_banco.reg5[4] top.eq12_processador_tb.uut.a_banco.reg5[3] top.eq12_processador_tb.uut.a_banco.reg5[2] top.eq12_processador_tb.uut.a_banco.reg5[1] top.eq12_processador_tb.uut.a_banco.reg5[0]
+[pattern_trace] 1
+[pattern_trace] 0

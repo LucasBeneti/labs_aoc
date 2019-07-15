@@ -12,7 +12,7 @@ entity uc is
         reg_destino: out unsigned(4 downto 0); -- reg destino da operacao
         reg_operando: out unsigned(4 downto 0); -- reg usado na operacao
         imm_flag: out std_logic; -- flag para ver se operacao sera com imediato (LDI)
-        immediate: out unsigned(4 downto 0);
+        immediate: out unsigned(15 downto 0);
         opcode: out unsigned(5 downto 0)
     );
 end entity;
@@ -32,32 +32,36 @@ begin
 
     opcode_s <= instr(15 downto 10);
 
-    jump_en <= '1' when opcode = "100101" else
+    jump_en <= '1' when opcode_s = "100101" else
                '0';
 
     pc_wr_en <= '1' when estate = '1' else
-                '0';
+                '0';    
 
-    imm_flag <=  '1' when opcode = "111000" else
-            '0';
+    imm_flag <=  '1' when opcode_s = "000101" else -- implementado agora
+                 '0';
 
     addr_uc <= instr(6 downto 0);
     
-    reg_destino <=  "0000000" when opcode = "100101" else -- JMP
+    reg_destino <=  "00000" when opcode_s = "100101" else -- JMP
                     instr(4 downto 0);
 
-    reg_operando <= "0000000" when opcode = "100101" else -- JMP
-                    "0000000" when opcode = "111000" else -- LDI
+    reg_operando <= "00000" when opcode_s = "100101" else -- JMP
+                    "00000" when opcode_s = "111000" else -- LDI
+                    "00000" when opcode_s = "000101" else -- SUBI
                     instr(9 downto 5);
 
-    immediate <= "00000000000" & instr(9 downto 5) when opcode = "111000" else -- se for op para LDI
-                 "0000000000000000";
+    immediate <= "00000000000" & instr(9 downto 5) when opcode_s = "111000" else -- se for op para LDI
+                 "00000000000" & instr(9 downto 5) when opcode_s = "000110" else
+                 "00000000000" & instr(9 downto 5) when opcode_s = "000101" else
+                 "00000000000" & "00000";
                     
     opcode <= opcode_s; -- verificar se isso pode
 end architecture;
 
--- LDI -> 111000KKKKKddddd
--- ADD -> 000011rrrrrddddd
--- SUB -> 000110rrrrrddddd
--- MOV -> 001011rrrrrddddd
--- JMP -> 100101KKKKKKKKKK
+-- LDI  -> 111000KKKKKddddd (só falta colocar a impl do LDI)
+-- ADD  -> 000011rrrrrddddd
+-- SUB  -> 000110rrrrrddddd
+-- SUBI -> 000101kkkkkddddd (subtrai de imediato)
+-- MOV  -> 001011rrrrrddddd
+-- JMP  -> 100101KKKKKKKKKK <- fica pra UC e PC se resolverem depois

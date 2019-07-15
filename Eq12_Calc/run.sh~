@@ -1,0 +1,1 @@
+gtkwave -a requisitos_entrega.gtkw eq12_processador_tb.ghw 
