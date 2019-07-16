@@ -213,11 +213,14 @@ architecture a_calculadora of Eq12_processador is
                     saida_2;
 
     -- atribuiçÕes RAM
-    addr_ram <= instruction(4 downto 0) when opcode_ula = "100100" or opcode_ula = "100101" else
+    -- impl STS (Store to Data Space)
+    addr_ram <= instruction(4 downto 0) when opcode_ula = "100101" else
                 "00000";
     wr_en_ram <= '1' when opcode_ula = "100101" else
                  '0';
     data_in_ram <= instruction(9 downto 5); -- terminar e testar implementação
+    -- impl LDS (Load imm from Data Space)
+    rd_para_banco <= instruction(4 downto 0);
 
 
 
