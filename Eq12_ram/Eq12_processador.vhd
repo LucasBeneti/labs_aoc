@@ -120,6 +120,14 @@ architecture a_calculadora of Eq12_processador is
     signal data_flag_out: unsigned(15 downto 0);
 
     signal addr_relativo: signed(6 downto 0);
+
+    --signals ram
+    signal addr_ram: unsigned(6 downto 0);
+    signal wr_en_ram: std_logic;
+    signal data_in_ram: unsigned(15 downto 0);
+    signal data_out_ram: unsigned(15 downto 0);
+
+
     
     begin
         a_rom: Eq12_rom port map(
@@ -204,4 +212,18 @@ architecture a_calculadora of Eq12_processador is
     in_B_mux_ula <= immediate_value when immediate_flag = '1' else
                     saida_2;
 
+    -- atribuiçÕes RAM
+    addr_ram <= instruction(4 downto 0) when opcode_ula = "100100" or opcode_ula = "100101" else
+                "00000";
+    wr_en_ram <= '1' when opcode_ula = "100101" else
+                 '0';
+    data_in_ram <= instruction(9 downto 5); -- terminar e testar implementação
+
+
+
 end architecture;
+
+--signal addr_ram: unsigned(6 downto 0);
+--signal wr_en_ram: std_logic;
+--signal data_in_ram: unsigned(15 downto 0);
+-- signal data_out_ram: unsigned(15 downto 0);
