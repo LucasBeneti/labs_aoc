@@ -59,13 +59,21 @@ architecture a_calculadora of Eq12_processador is
     end component;
 
     component Eq12_reg16bits is -- para salvar flag
-        port(   
-                clk: in std_logic;
+        port(   clk: in std_logic;
                 rst: in std_logic;
                 we3: in std_logic;
                 wd3: in unsigned(15 downto 0);
                 data_out: out unsigned(15 downto 0)
             );
+    end component;
+
+    component Eq12_ram is
+        port(   clk: in std_logic;
+                addr: in unsigned(6 downto 0);
+                wr_en: in std_logic;
+                data_in: in unsigned(15 downto 0);
+                data_out:out unsigned(15 downto 0)
+        );
     end component;
 
     -- signal clk_s,rst_s: std_lof

@@ -22,12 +22,12 @@ end entity;
 -- CP   -> 001010rrrrrddddd (depois dela qualquer branch pode ser usado)
 -- BRLT -> 111100000skkkkkk (jump relativo com contante sendo signed)
 
+-- LDS  -> 100100KKKKKddddd (ddddd é o reg que vai receber dado do addr KKKKK)
+-- STS  -> 100101KKKKKddddd (ddddd é o addr na ram pro immediate ser guardado)
+
 architecture a_ula of Eq12_ula is    
 
     begin
-        -- flag_maior <= '1'when op="10" and in_A>in_B else
-        --               '0';
-
         out_S <=in_A+in_B when op="000011" else -- (ADD antre Regs)
                 -- in_A/in_B when op="01" else
                 in_A-in_B when op="000110" else

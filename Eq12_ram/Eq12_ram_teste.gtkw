@@ -1,0 +1,27 @@
+[*]
+[*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
+[*] Tue Jul 16 01:49:45 2019
+[*]
+[dumpfile] "/home/lucas/Documents/labs_aoc/Eq12_ram/eq12_ram_tb.ghw"
+[dumpfile_mtime] "Tue Jul 16 01:47:01 2019"
+[dumpfile_size] 21077
+[savefile] "/home/lucas/Documents/labs_aoc/Eq12_ram/Eq12_ram_teste.gtkw"
+[timestart] 0
+[size] 1474 779
+[pos] -669 624
+*-27.142038 28100000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.eq12_ram_tb.
+[sst_width] 223
+[signals_width] 250
+[sst_expanded] 1
+[sst_vpaned_height] 223
+@28
+top.eq12_ram_tb.wr_en
+top.eq12_ram_tb.clk
+@24
+#{top.eq12_ram_tb.data_in_s[15:0]} top.eq12_ram_tb.data_in_s[15] top.eq12_ram_tb.data_in_s[14] top.eq12_ram_tb.data_in_s[13] top.eq12_ram_tb.data_in_s[12] top.eq12_ram_tb.data_in_s[11] top.eq12_ram_tb.data_in_s[10] top.eq12_ram_tb.data_in_s[9] top.eq12_ram_tb.data_in_s[8] top.eq12_ram_tb.data_in_s[7] top.eq12_ram_tb.data_in_s[6] top.eq12_ram_tb.data_in_s[5] top.eq12_ram_tb.data_in_s[4] top.eq12_ram_tb.data_in_s[3] top.eq12_ram_tb.data_in_s[2] top.eq12_ram_tb.data_in_s[1] top.eq12_ram_tb.data_in_s[0]
+#{top.eq12_ram_tb.addr_s[6:0]} top.eq12_ram_tb.addr_s[6] top.eq12_ram_tb.addr_s[5] top.eq12_ram_tb.addr_s[4] top.eq12_ram_tb.addr_s[3] top.eq12_ram_tb.addr_s[2] top.eq12_ram_tb.addr_s[1] top.eq12_ram_tb.addr_s[0]
+#{top.eq12_ram_tb.data_out_s[15:0]} top.eq12_ram_tb.data_out_s[15] top.eq12_ram_tb.data_out_s[14] top.eq12_ram_tb.data_out_s[13] top.eq12_ram_tb.data_out_s[12] top.eq12_ram_tb.data_out_s[11] top.eq12_ram_tb.data_out_s[10] top.eq12_ram_tb.data_out_s[9] top.eq12_ram_tb.data_out_s[8] top.eq12_ram_tb.data_out_s[7] top.eq12_ram_tb.data_out_s[6] top.eq12_ram_tb.data_out_s[5] top.eq12_ram_tb.data_out_s[4] top.eq12_ram_tb.data_out_s[3] top.eq12_ram_tb.data_out_s[2] top.eq12_ram_tb.data_out_s[1] top.eq12_ram_tb.data_out_s[0]
+[pattern_trace] 1
+[pattern_trace] 0
