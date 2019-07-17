@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
+[*] Wed Jul 17 20:19:05 2019
+[*]
+[dumpfile] "/home/lucas/Documents/labs_aoc/Eq12_ram/eq12_ram_tb.ghw"
+[dumpfile_mtime] "Wed Jul 17 20:18:11 2019"
+[dumpfile_size] 8197
+[savefile] "/home/lucas/Documents/labs_aoc/Eq12_ram/teste_ram_tb.gtkw"
+[timestart] 116000000
+[size] 1000 600
+[pos] 197 0
+*-28.368782 164000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.eq12_ram_tb.
+[treeopen] top.eq12_ram_tb.uut.
+[treeopen] top.eq12_ram_tb.uut.content_ram.
+[sst_width] 205
+[signals_width] 180
+[sst_expanded] 1
+[sst_vpaned_height] 162
+@28
+top.eq12_ram_tb.wr_en
+top.eq12_ram_tb.clk
+@24
+#{top.eq12_ram_tb.data_out_s[15:0]} top.eq12_ram_tb.data_out_s[15] top.eq12_ram_tb.data_out_s[14] top.eq12_ram_tb.data_out_s[13] top.eq12_ram_tb.data_out_s[12] top.eq12_ram_tb.data_out_s[11] top.eq12_ram_tb.data_out_s[10] top.eq12_ram_tb.data_out_s[9] top.eq12_ram_tb.data_out_s[8] top.eq12_ram_tb.data_out_s[7] top.eq12_ram_tb.data_out_s[6] top.eq12_ram_tb.data_out_s[5] top.eq12_ram_tb.data_out_s[4] top.eq12_ram_tb.data_out_s[3] top.eq12_ram_tb.data_out_s[2] top.eq12_ram_tb.data_out_s[1] top.eq12_ram_tb.data_out_s[0]
+#{top.eq12_ram_tb.data_in_s[15:0]} top.eq12_ram_tb.data_in_s[15] top.eq12_ram_tb.data_in_s[14] top.eq12_ram_tb.data_in_s[13] top.eq12_ram_tb.data_in_s[12] top.eq12_ram_tb.data_in_s[11] top.eq12_ram_tb.data_in_s[10] top.eq12_ram_tb.data_in_s[9] top.eq12_ram_tb.data_in_s[8] top.eq12_ram_tb.data_in_s[7] top.eq12_ram_tb.data_in_s[6] top.eq12_ram_tb.data_in_s[5] top.eq12_ram_tb.data_in_s[4] top.eq12_ram_tb.data_in_s[3] top.eq12_ram_tb.data_in_s[2] top.eq12_ram_tb.data_in_s[1] top.eq12_ram_tb.data_in_s[0]
+#{top.eq12_ram_tb.uut.addr[6:0]} top.eq12_ram_tb.uut.addr[6] top.eq12_ram_tb.uut.addr[5] top.eq12_ram_tb.uut.addr[4] top.eq12_ram_tb.uut.addr[3] top.eq12_ram_tb.uut.addr[2] top.eq12_ram_tb.uut.addr[1] top.eq12_ram_tb.uut.addr[0]
+#{top.eq12_ram_tb.uut.content_ram[3][15:0]} top.eq12_ram_tb.uut.content_ram[3][15] top.eq12_ram_tb.uut.content_ram[3][14] top.eq12_ram_tb.uut.content_ram[3][13] top.eq12_ram_tb.uut.content_ram[3][12] top.eq12_ram_tb.uut.content_ram[3][11] top.eq12_ram_tb.uut.content_ram[3][10] top.eq12_ram_tb.uut.content_ram[3][9] top.eq12_ram_tb.uut.content_ram[3][8] top.eq12_ram_tb.uut.content_ram[3][7] top.eq12_ram_tb.uut.content_ram[3][6] top.eq12_ram_tb.uut.content_ram[3][5] top.eq12_ram_tb.uut.content_ram[3][4] top.eq12_ram_tb.uut.content_ram[3][3] top.eq12_ram_tb.uut.content_ram[3][2] top.eq12_ram_tb.uut.content_ram[3][1] top.eq12_ram_tb.uut.content_ram[3][0]
+#{top.eq12_ram_tb.uut.content_ram[14][15:0]} top.eq12_ram_tb.uut.content_ram[14][15] top.eq12_ram_tb.uut.content_ram[14][14] top.eq12_ram_tb.uut.content_ram[14][13] top.eq12_ram_tb.uut.content_ram[14][12] top.eq12_ram_tb.uut.content_ram[14][11] top.eq12_ram_tb.uut.content_ram[14][10] top.eq12_ram_tb.uut.content_ram[14][9] top.eq12_ram_tb.uut.content_ram[14][8] top.eq12_ram_tb.uut.content_ram[14][7] top.eq12_ram_tb.uut.content_ram[14][6] top.eq12_ram_tb.uut.content_ram[14][5] top.eq12_ram_tb.uut.content_ram[14][4] top.eq12_ram_tb.uut.content_ram[14][3] top.eq12_ram_tb.uut.content_ram[14][2] top.eq12_ram_tb.uut.content_ram[14][1] top.eq12_ram_tb.uut.content_ram[14][0]
+[pattern_trace] 1
+[pattern_trace] 0

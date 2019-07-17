@@ -214,6 +214,7 @@ architecture a_calculadora of Eq12_processador is
     immed_ldi <= instruction(9 downto 5) when opcode_ula="111000" else
                  "00000";
     data_banco <= "00000000000" & immed_ldi when opcode_ula="111000" else
+                  data_out_ram when opcode_ula = "110100" else -- LDS
                   res_ula;
 
     immediate_flag <= '1' when opcode_ula="000101" else -- SUBI
@@ -221,10 +222,10 @@ architecture a_calculadora of Eq12_processador is
     in_B_mux_ula <= immediate_value when immediate_flag = '1' else
                     saida_2;
 
-    -- -- atrr RAM
-    -- -- impl STD (Store from Register to Data Space)
-    -- wr_en_ram <= '1' when opcode_ula="110101" else
-    --              '0';
+    -- atrr RAM
+    -- impl STD (Store from Register to Data Space)
+    wr_en_ram <= '1' when opcode_ula="110101" else
+                 '0';
 
     -- addr_ram <= "00" & rd_para_banco when opcode_ula = "110101" or opcode_ula = "110100" else
     --             "0000000";
