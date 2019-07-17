@@ -19,4 +19,4 @@ ghdl -e eq12_ram &&
 # ghdl -a Eq12_ram_tb.vhd &&
 # ghdl -e eq12_ram_tb &&
 # ghdl -r eq12_ram_tb --stop-time=100000ns --wave=eq12_ram_tb.ghw
-ghdl -r eq12_processador_tb --stop-time=10000ns --wave=eq12_ram.ghw
+ghdl -r eq12_processador_tb --stop-time=8000ns --wave=eq12_ram.ghw

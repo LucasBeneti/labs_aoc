@@ -1,19 +1,19 @@
 v 4
-file . "Eq12_ram.vhd" "bc21e9db4122fa14bcdcb904db3edad720c6742c" "20190717011604.487":
-  entity eq12_ram at 1( 0) + 0 on 1995;
-  architecture a_ram of eq12_ram at 15( 300) + 0 on 1996;
-file . "Eq12_banco_regs.vhd" "025a9ffc5ba8f8b9641669177c61e4ea28e79bb5" "20190717011603.470":
-  entity eq12_banco_regs at 6( 297) + 0 on 1987;
-  architecture a_banco of eq12_banco_regs at 20( 846) + 0 on 1988;
-file . "Eq12_processador.vhd" "2ecd4708e6fb4c187c7163a62333ef85cb13fa94" "20190717011603.956":
-  entity eq12_processador at 3( 51) + 0 on 1991;
-  architecture a_calculadora of eq12_processador at 14( 217) + 0 on 1992;
-file . "Eq12_reg16bits.vhd" "347381aa0965a8286452cc4140aeb1db134a5467" "20190717011603.344":
-  entity eq12_reg16bits at 3( 51) + 0 on 1985;
-  architecture a_reg16bits of eq12_reg16bits at 16( 349) + 0 on 1986;
-file . "Eq12_pc.vhd" "5fa1125a07ba36ee26f5610f040c0efb84a460e2" "20190717011603.031":
-  entity eq12_pc at 3( 51) + 0 on 1981;
-  architecture a_pc of eq12_pc at 15( 293) + 0 on 1982;
+file . "Eq12_ram.vhd" "bc21e9db4122fa14bcdcb904db3edad720c6742c" "20190717161552.057":
+  entity eq12_ram at 1( 0) + 0 on 2319;
+  architecture a_ram of eq12_ram at 15( 300) + 0 on 2320;
+file . "Eq12_banco_regs.vhd" "025a9ffc5ba8f8b9641669177c61e4ea28e79bb5" "20190717161551.197":
+  entity eq12_banco_regs at 6( 297) + 0 on 2311;
+  architecture a_banco of eq12_banco_regs at 20( 846) + 0 on 2312;
+file . "Eq12_processador.vhd" "290eff6f2f5ca0eb1b87b9a39259703d1ac23fa8" "20190717161551.623":
+  entity eq12_processador at 3( 51) + 0 on 2315;
+  architecture a_calculadora of eq12_processador at 14( 217) + 0 on 2316;
+file . "Eq12_reg16bits.vhd" "347381aa0965a8286452cc4140aeb1db134a5467" "20190717161551.073":
+  entity eq12_reg16bits at 3( 51) + 0 on 2309;
+  architecture a_reg16bits of eq12_reg16bits at 16( 349) + 0 on 2310;
+file . "Eq12_pc.vhd" "5fa1125a07ba36ee26f5610f040c0efb84a460e2" "20190717161550.741":
+  entity eq12_pc at 3( 51) + 0 on 2305;
+  architecture a_pc of eq12_pc at 15( 293) + 0 on 2306;
 file . "calculadora_tb.vhd" "7909165b223e494829480e42e2c2e0d439fc9af9" "20190713155154.532":
   entity calculadora_tb at 1( 0) + 0 on 1719;
   architecture a_calculadora_tb of calculadora_tb at 8( 108) + 0 on 1720;
@@ -56,18 +56,18 @@ file . "banco_e_ula_tb.vhd" "fa7f848d0c7b1718b7c781aa09bd4d29b16c8614" "20190624
 file . "pc.vhd" "6250969aad279a49cb5f26c49a598d2b3d34e352" "20190713155153.381":
   entity pc at 1( 0) + 0 on 1707;
   architecture a_pc of pc at 13( 237) + 0 on 1708;
-file . "Eq12_rom.vhd" "c9b5c9b66a21a2722eda1c0eaf294d224f6d82ca" "20190717011602.883":
-  entity eq12_rom at 4( 135) + 0 on 1979;
-  architecture a_rom of eq12_rom at 16( 360) + 0 on 1980;
-file . "Eq12_uc.vhd" "e02a07e4f0ccb2d2e5581366eccee1dde89650f5" "20190717011603.167":
-  entity eq12_uc at 3( 51) + 0 on 1983;
-  architecture a_uc of eq12_uc at 23( 775) + 0 on 1984;
-file . "Eq12_ula.vhd" "561febcdd9557ac38db10dfc45c2a5a03102ea55" "20190717011603.763":
-  entity eq12_ula at 2( 50) + 0 on 1989;
-  architecture a_ula of eq12_ula at 28( 972) + 0 on 1990;
-file . "Eq12_processador_tb.vhd" "52c871b10c54d92966c62e9149275aa7d5a7d610" "20190717011604.277":
-  entity eq12_processador_tb at 3( 51) + 0 on 1993;
-  architecture a_calculadora_tb of eq12_processador_tb at 10( 164) + 0 on 1994;
+file . "Eq12_rom.vhd" "3d40331e8c58d5c64722acc98c2dda8088418e6b" "20190717161550.596":
+  entity eq12_rom at 4( 135) + 0 on 2303;
+  architecture a_rom of eq12_rom at 16( 360) + 0 on 2304;
+file . "Eq12_uc.vhd" "ed14fd53e130b6d9b9356fe8d28bc04957d6be73" "20190717161550.871":
+  entity eq12_uc at 3( 51) + 0 on 2307;
+  architecture a_uc of eq12_uc at 23( 775) + 0 on 2308;
+file . "Eq12_ula.vhd" "7edc56a14a512126a5a6ec17096959875a36b2c4" "20190717161551.476":
+  entity eq12_ula at 2( 50) + 0 on 2313;
+  architecture a_ula of eq12_ula at 28( 972) + 0 on 2314;
+file . "Eq12_processador_tb.vhd" "52c871b10c54d92966c62e9149275aa7d5a7d610" "20190717161551.878":
+  entity eq12_processador_tb at 3( 51) + 0 on 2317;
+  architecture a_calculadora_tb of eq12_processador_tb at 10( 164) + 0 on 2318;
 file . "Eq12_ram_tb.vhd" "0dd9ea98ddc29f05f88b7b64418967d5a46231fb" "20190717002750.162":
   entity eq12_ram_tb at 2( 1) + 0 on 1869;
   architecture a_ram_tb of eq12_ram_tb at 9( 106) + 0 on 1870;

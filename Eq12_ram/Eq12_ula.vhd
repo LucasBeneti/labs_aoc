@@ -22,8 +22,8 @@ end entity;
 -- CP   -> 001010rrrrrddddd (depois dela qualquer branch pode ser usado)
 -- BRLT -> 111100000skkkkkk (jump relativo com contante sendo signed)
 
--- LDS  -> 100100KKKKKddddd (ddddd é o reg que vai receber dado do addr KKKKK)
--- STS  -> 100101KKKKKddddd (ddddd é o addr na ram pro immediate ser guardado)
+-- LDS  -> 110100KKKKKddddd (ddddd é o reg que vai receber dado do addr KKKKK)
+-- STS  -> 110101KKKKKddddd (ddddd é o addr na ram pro immediate ser guardado)
 
 architecture a_ula of Eq12_ula is    
 
