@@ -126,8 +126,6 @@ architecture a_calculadora of Eq12_processador is
     signal wr_en_ram: std_logic;
     signal data_in_ram: unsigned(15 downto 0);
     signal data_out_ram: unsigned(15 downto 0);
-
-
     
     begin
         a_rom: Eq12_rom port map(
@@ -186,6 +184,14 @@ architecture a_calculadora of Eq12_processador is
             data_out => data_flag_out
         );
 
+        a_ram: Eq12_ram port map(
+            clk=>clk,
+            addr=>addr_ram,
+            wr_en=>wr_en_ram,
+            data_in=>data_in_ram,
+            data_out => data_out_ram
+        );
+
     en_wr <= '1' when opcode_ula="001010" else
              '0';
     data_flag_in <= "00000000000000" & flag_sig when en_wr = '1' else
@@ -208,19 +214,29 @@ architecture a_calculadora of Eq12_processador is
                   res_ula;
 
     immediate_flag <= '1' when opcode_ula="000101" else -- SUBI
+                      -- '1' when opcode_ula="111000" else
                       '0';
     in_B_mux_ula <= immediate_value when immediate_flag = '1' else
                     saida_2;
 
-    -- atribuiçÕes RAM
-    -- impl STS (Store to Data Space)
-    addr_ram <= instruction(4 downto 0) when opcode_ula = "100101" else
-                "00000";
+    -- atrr RAM
+    -- impl STD (Store from Register to Data Space)
+    wr_en_ram <= '1' when opcode_ula="100101" else
+                 '0';
+
+    addr_ram <= "00" & rd_para_banco when opcode_ula = "100101" or opcode_ula = "100100" else
+                "0000000";
     wr_en_ram <= '1' when opcode_ula = "100101" else
                  '0';
-    data_in_ram <= instruction(9 downto 5); -- terminar e testar implementação
+    data_in_ram <= saida_1; -- saida 1 do banco é o data_in pra RAM
+
     -- impl LDS (Load imm from Data Space)
-    rd_para_banco <= instruction(4 downto 0);
+    -- addr_ram <= instruction(4 downto 0) when opcode_ula = "100100" else
+    --             "0000000";
+    rd_para_banco <= addr_ram(4 downto 0) when opcode_ula = "100100" else
+                     "00000";
+    data_banco <= data_out_ram;
+
 
 
 

@@ -48,13 +48,13 @@ begin
     
     reg_destino <=  "00000" when opcode_s = "100101" else -- JMP
                     "00000" when opcode_s = "111100" else -- BRLT
-                    -- "00000" when opcode_s = "001010" else -- CP
                     instr(4 downto 0);
 
     reg_operando <= "00000" when opcode_s = "100101" else -- JMP
                     "00000" when opcode_s = "111000" else -- LDI
                     "00000" when opcode_s = "000101" else -- SUBI
                     "00000" when opcode_s = "111100" else -- BRLT
+                    "00000" when opcode_s = "100100" else -- LDS
                     instr(9 downto 5);
 
     immediate <= "00000000000" & instr(9 downto 5) when opcode_s = "111000" else -- se for op para LDI
