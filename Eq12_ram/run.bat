@@ -1,2 +1,2 @@
-gtkwave -a Eq12_DesvCond.gtkw eq12_DesvCond.ghw
+gtkwave -a Eq12_RAM.gtkw eq12_ram.ghw
 PAUSE

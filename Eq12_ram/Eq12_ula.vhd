@@ -23,7 +23,7 @@ end entity;
 -- BRLT -> 111100000skkkkkk (jump relativo com contante sendo signed)
 
 -- LDS  -> 110100KKKKKddddd (ddddd é o reg que vai receber dado do addr KKKKK)
--- STS  -> 110101KKKKKddddd (ddddd é o addr na ram pro immediate ser guardado)
+-- STD  -> 110101KKKKKddddd (ddddd é o addr na ram pro dado ser guardado)
 
 architecture a_ula of Eq12_ula is    
 
@@ -40,7 +40,7 @@ architecture a_ula of Eq12_ula is
         -- impl. da flag de CP do processador
         flag <= "01" when in_A>in_B and op="001010" else
                 "10" when in_A<in_B and op="001010" else
-                "00"; -- significa que eh igual
+                "00";
 end architecture;
 
  

@@ -1,11 +1,11 @@
 [*]
 [*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
-[*] Thu Jul 18 00:22:16 2019
+[*] Thu Jul 18 00:22:34 2019
 [*]
 [dumpfile] "/home/lucas/Documents/labs_aoc/Eq12_ram/eq12_ram.ghw"
 [dumpfile_mtime] "Wed Jul 17 23:45:00 2019"
 [dumpfile_size] 13766
-[savefile] "/home/lucas/Documents/labs_aoc/Eq12_ram/teste_ldi.gtkw"
+[savefile] "/home/lucas/Documents/labs_aoc/Eq12_ram/Eq12_RAM.gtkw"
 [timestart] 0
 [size] 1366 747
 [pos] 100 574

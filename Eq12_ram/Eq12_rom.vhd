@@ -12,7 +12,9 @@ entity Eq12_rom is
         data: out unsigned(15 downto 0)
     );
 end entity;
-
+-- Só faltou impelementar a funcao LDS que carrega um dos regs do banco com o dado
+-- de um address especificado da RAM. Mas o Store na RAM tá funcionando direitinho 
+-- pelo menos
 architecture a_rom of Eq12_rom is 
     type mem is array (0 to 127) of unsigned(15 downto 0); --  verificar o que eh esse tipo
     constant rom_content : mem := (
@@ -23,10 +25,10 @@ architecture a_rom of Eq12_rom is
         3 => b"001011_00100_00010", -- MOV R2, R4
         4 => b"110100_00111_00101", -- LDS R5, 7 000011_00111_00101
         5 => b"111000_11110_00010", -- LDI R2, #30
-        6 => b"000000_00000_00000", -- CP  R3, R2 (compara os dois regs e seta uma flag da relacao)
-        7 => b"000000_00000_00000", -- BRLT #-4
-        8 => b"000000_00000_00000", -- MOV R5, R4
-        9 => b"000000_00000_00000", -- LDI R2, #0
+        6 => b"000000_00000_00000",
+        7 => b"000000_00000_00000",
+        8 => b"000000_00000_00000",
+        9 => b"000000_00000_00000",
         10 => b"000000_00000_00000",
         11 => b"000000_00000_00000",    
         12 => b"000000_00000_00000",
@@ -58,3 +60,5 @@ end architecture;
 -- JMP  -> 100101KKKKKKKKKK <- fica pra UC e PC se resolverem depois
 -- CP   -> 001010rrrrrddddd (depois dela qualquer branch pode ser usado)
 -- BRLT -> 111100000skkkkkk (jump relativo com contante sendo signed)
+-- [nao implementado]LDS  -> 110100KKKKKddddd (ddddd é o reg que vai receber dado do addr KKKKK)
+-- STD  -> 110101KKKKKddddd (ddddd é o addr na ram pro dado ser guardado)

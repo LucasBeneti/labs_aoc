@@ -60,7 +60,9 @@ begin
     immediate <= "00000000000" & instr(9 downto 5) when opcode_s = "111000" else -- se for op para LDI
                  --"00000000000" & instr(9 downto 5) when opcode_s = "000110" else
                  "00000000000" & instr(9 downto 5) when opcode_s = "000101" else -- SUBI
-                 "00000000000" & "00000";
+                 
+                 --  "00000000000" & instr(9 downto 5) when opcode_s = "000101" else -- LDS
+                 "00000000000" & instr(9 downto 5);
                     
     opcode <= opcode_s; -- verificar se isso pode
 end architecture;
